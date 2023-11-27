@@ -1,0 +1,45 @@
+{
+"//info1": "You can check if the social icon exists by going to: https://icons.getbootstrap.com/",
+"//info2": "JSON does not allow trailing commas (last element in object or list does not end with a comma).",
+"team":
+    [
+        {
+            "name": "Syed Abraham Ahmed",
+            "role": "Executive",
+            "description": "",
+            "image": "A.Ahmed.jpg",
+            "socials": {}
+        },
+        {
+            "name": "Minjeong Kang",
+            "role": "Executive",
+            "description": "",
+            "image": "M.Kang.jpg",
+            "socials": {}
+        },
+        {
+            "name": "Breanna Stratton",
+            "role": "Executive",
+            "description": "Promotions Director",
+            "image": "B.Stratton.jpg",
+            "socials": {
+                "linkedin": "https://www.linkedin.com/in/breanna-stratton-278b8a1a1/"
+            }
+        },
+        {
+            "name": "Garizaldy Gerra",
+            "role": "Executive",
+            "description": "Description",
+            "image": "G.Gerra.jpg",
+            "socials": {
+            }
+        },
+        {
+            "name": "Connor Pagtakhan",
+            "role": "Executive",
+            "description": "",
+            "image": "",
+            "socials": {}
+        }
+    ]
+}

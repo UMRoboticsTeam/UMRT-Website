@@ -80,6 +80,15 @@
   --bs-link-hover-color: #294375;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+
+
+
+
+  --nav-background: #ffffffe5;
+  --member-social-color: #9a9faa;
+  --member-social-background: #eff2f8; 
+  --socials-color: var(--bs-primary);
+  --socials-background: var(--member-social-background);
 }
 
 *,
@@ -10870,7 +10879,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: var(--nav-background);
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -11015,10 +11024,10 @@ header.masthead h1, header.masthead .h1 {
 --------------------------------------------------------------*/
 .team .member {
   position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 5px;
-  background: #fff;
+  background: #f5f5f5;
   /* transition: 0.5s; */
   height: 100%;
 }
@@ -11026,7 +11035,7 @@ header.masthead h1, header.masthead .h1 {
 .team .member .pic {
   overflow: hidden;
   width: 180px;
-  border-radius: 50%;
+  border-radius: 1%;
 }
 
 /* .team .member .pic img {
@@ -11076,22 +11085,69 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .team .member .social a {
-  transition: ease-in-out 0.3s;
+  /* transition: ease-in-out 0.3s; */
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
   width: 32px;
   height: 32px;
-  background: #eff2f8;
+  background: var(--member-social-background);
 }
 
 .team .member .social a i {
-  color: #05225b;
+  color: var(--member-social-color);
   font-size: 16px;
   margin: 0 2px;
 }
 
 .team .member .social a+a {
   margin-left: 8px;
+}
+
+
+
+#socials {
+  padding: 1rem 0;
+}
+/* UMRT Socials */
+#socials .social {
+  /* margin-top: 12px; */
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  justify-content: center;
+}
+
+#socials .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+  background: var(--socials-background);
+}
+
+#socials .social a i {
+  /* color: var(--member-social-color); */
+  color: var(--socials-color);
+  font-size: 32px;
+  margin: 0 2px;
+}
+
+#socials .social a+a {
+  margin-left: 16px;
+}
+
+
+
+
+
+
+
+
+div {
+  /* border-style: dashed;
+  border-width: 1px; */
 }
