@@ -85,8 +85,9 @@
 
 
   --nav-background: #ffffffe5;
-  --member-social-color: #9a9faa;
-  --member-social-background: #eff2f8; 
+  --member-background: #fefefe;
+  --member-social-color: #354462;
+  --member-social-background: #ededf2; 
   --socials-color: var(--bs-primary);
   --socials-background: var(--member-social-background);
 }
@@ -11027,7 +11028,7 @@ header.masthead h1, header.masthead .h1 {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 5px;
-  background: #f5f5f5;
+  background: var(--member-background);
   /* transition: 0.5s; */
   height: 100%;
 }
@@ -11035,7 +11036,7 @@ header.masthead h1, header.masthead .h1 {
 .team .member .pic {
   overflow: hidden;
   width: 180px;
-  border-radius: 1%;
+  border-radius: 50%;
 }
 
 /* .team .member .pic img {
