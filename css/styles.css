@@ -10944,12 +10944,31 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), url("/assets/img/title-bg.jpg");
+  /* background: linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), url("/assets/img/title-bg.jpg"); */
   /* 5, 34, 91; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: scroll; */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+}
+header.masthead.main {
+  background: linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), url("/assets/img/title-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+header.masthead.team {
+  background: linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), url("/assets/img/title-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead.competitions {
+  background: linear-gradient(to bottom, rgba(5, 34, 91, 0.3) 0%, rgba(5, 34, 91, 0.4) 100%), url("/assets/img/drumheller-panorama-min.jpg"); 
+  background-size: auto 100%;
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
@@ -10973,6 +10992,9 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
 }
+
+
+
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;
@@ -11142,6 +11164,24 @@ header.masthead h1, header.masthead .h1 {
   margin-left: 16px;
 }
 
+
+
+.sponsors-container_off {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-columns: repeat(auto-fill, 186px) auto; */
+  grid-template-columns: auto auto;
+  padding: 10px;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+.sponsors-container_off .sponsor {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #000;
+  /* min-width: 300px; */
+  /* overflow: auto; */
+}
 
 
 
