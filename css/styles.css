@@ -10970,6 +10970,13 @@ header.masthead.competitions {
   background: linear-gradient(to bottom, rgba(5, 34, 91, 0.3) 0%, rgba(5, 34, 91, 0.4) 100%), url("/assets/img/drumheller-panorama-min.jpg"); 
   background-size: auto 100%;
 }
+header.masthead.sponsorships {
+  background: linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), url("/assets/img/sponsors-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
