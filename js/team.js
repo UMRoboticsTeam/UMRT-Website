@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', event => {
     // for each member:
         // add member block which includes:
             // name, role, description, image
-    fetch('./assets/team/team.json')
+    fetch('/assets/team/team.json')
     .then((response) => response.json())
     .then((team_json) => {
         const team_div = document.getElementById('team-div');
@@ -40,8 +40,8 @@ window.addEventListener('DOMContentLoaded', event => {
             member_html.querySelector('.role').innerHTML = team_json.team[i].role;
             member_html.querySelector('.description').innerHTML = team_json.team[i].description;
             
-            member_html.querySelector('img').onerror = function(){member_html.querySelector('img').src = 'assets/team/blank-profile.jpg';}
-            member_html.querySelector('img').src = `assets/team/${team_json.team[i].image}`;
+            member_html.querySelector('img').onerror = function(){member_html.querySelector('img').src = '/assets/team/blank-profile.jpg';}
+            member_html.querySelector('img').src = `/assets/team/${team_json.team[i].image}`;
             
             
             // Add socials
