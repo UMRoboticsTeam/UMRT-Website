@@ -1,7 +1,7 @@
 {
 "//info1": "You can check if the social icon exists by going to: https://icons.getbootstrap.com/",
 "//info2": "JSON does not allow trailing commas (last element in object or list does not end with a comma).",
-"team":
+"exec_team":
     [
         {
             "name": "Syed Abraham Ahmed",
@@ -37,7 +37,7 @@
             "name": "Garizaldy Gerra",
             "role": "Co - Secretary",
             "description": "5th Year Computer Engineering Undergraduate Student",
-            "image": "blank-head.jpg",
+            "image": "G.Gerra.jpg",
             "socials": {
                 "linkedin": "https://www.linkedin.com/in/garizaldygerra/"
             }
@@ -67,6 +67,73 @@
             "image": "B.Stratton.jpg",
             "socials": {
                 "linkedin": "https://www.linkedin.com/in/breanna-stratton-278b8a1a1/"
+            }
+        }
+    ],
+"subs_team":
+    [
+        {
+            "name": "Nikolaus Reichert",
+            "role": "Embedded Systems Lead",
+            "description": "",
+            "image": "blank-head.jpg",
+            "socials": {
+            }
+        },
+        {
+            "name": "Erica von Stackelberg",
+            "role": "Electrical Systems Lead",
+            "description": "",
+            "image": "blank-head.jpg",
+            "socials": {
+            }
+        },
+        {
+            "name": "Minjeong Kang",
+            "role": "Communications System Co-Lead",
+            "description": "",
+            "image": "blank-head.jpg",
+            "socials": {
+            }
+        },
+        {
+            "name": "Adam Garofalo",
+            "role": "Communications System Co-Lead",
+            "description": "",
+            "image": "blank-head.jpg",
+            "socials": {
+            }
+        },
+        {
+            "name": "Ghrum Yemessghen",
+            "role": "Robitic Arm System Co-Lead",
+            "description": "",
+            "image": "blank-head.jpg",
+            "socials": {
+            }
+        },
+        {
+            "name": "Graham Nash",
+            "role": "Robitic Arm System Co-Lead",
+            "description": "",
+            "image": "blank-head.jpg",
+            "socials": {
+            }
+        },
+        {
+            "name": "Matthew Nutbean",
+            "role": "Chassis System Lead",
+            "description": "",
+            "image": "blank-head.jpg",
+            "socials": {
+            }
+        },
+        {
+            "name": "Breanna Stratton",
+            "role": "Payload System Lead",
+            "description": "",
+            "image": "blank-head.jpg",
+            "socials": {
             }
         }
     ]
