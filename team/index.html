@@ -70,6 +70,25 @@
         </header>
 
 
+        <!-- Member Template -->
+        <template class="template" id="member-template">
+            <div class="col-xl-4 col-md-6">
+
+                <div class="member d-flex my-2">
+                    <div class="pic">
+                        <img src="blank" class="img-fluid" alt="member image">
+                    </div>
+                    <div class="member-info flex-grow">
+                        <h4 class="name">Name</h4>
+                        <h6 class="role"></h6>
+                        <p style="display: block;" class="description">Description</p>
+                        <div class="social">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        
         
 
         <!-- Executive Team -->
@@ -78,27 +97,7 @@
                 <h2 class="text-center mt-0">Executive Team</h2>
                 <hr class="divider" />
                 <div id="exec-team-div" class="row d-flex justify-content-center">
-                    <template class="template">
-                        <div class="col-xl-4 col-md-6 mt-4 mt-lg-2">
-
-                            <div class="member d-flex ">
-
-                                <div class="pic">
-                                    <img src="blank" class="img-fluid" alt="member image">
-                                </div>
-                                <div class="member-info flex-grow">
-                                    <h4 class="name">Name</h4>
-                                    <!-- <span class="role"></span> -->
-                                    <h6 class="role"></h6>
-                                    <p style="display: block;" class="description">Description</p>
-                                    <div class="social">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </template>
+                    <!-- Insert Executive Team -->
                 </div>
             </div>
         </section>
@@ -124,104 +123,30 @@
             </div>
         </section>
 
-        <!-- Subsystem Leads Team -->
-        <section class="page-section team" id="team">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Subsystem Leads</h2>
-                <hr class="divider" />
-                <div class="row" id="subs-team-div">
-                    <template class="template">
-                        <div class="col-lg-6 mt-4 mt-lg-2">
-                            <div class="member d-flex align-items-start">
-                                <div class="pic w-20"><img src="blank" class="img-fluid" alt="member image"></div>
-                                <div class="member-info w-80">
-                                    <h4 class="name">Name</h4>
-                                    <span class="role"></span>
-                                    <p style="display: block;" class="description">Description</p>
-                                    <div class="social">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </template>
+
+        <!-- Subsystems Template -->
+        <template id="subsystem-template">
+        <div class="col-xl-4 col-md-6 mt-4 mt-lg-5">
+                <div class="subsystem">
+                    <!-- <div class="py-3"> -->
+                    <div class="pic">
+                        <img src="/assets/img/subsystem-embedded.jpg" class="img-fluid">
+                    </div>
+                    <div class="mt-3">
+                        <h2 class="name">SubsystemName</h2>
+                        <p class="description">InsertDesc</p>
+                    </div>
                 </div>
             </div>
-        </section>
-
+        </template>
 
         <!-- Subsystems -->
-        <section class="page-section team" id="team">
+        <section class="page-section team" id="team" style="background-color: #dfe4e7;">
+            <h2 class="text-center mt-0">Subsystem Leads</h2>
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Subsystems</h2>
                 <hr class="divider" />
-                <div class="row" id="team-div">
-                    <!-- <div class="col-lg-6 mt-4 mt-lg-2">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic w-20"><img src="blank" class="img-fluid" alt="member image"></div>
-                            <div class="member-info w-80">
-                                <h4 class="name">Name</h4>
-                                <span class="role">Role</span>
-                                <p class="description">Description</p>
-                                <div class="social">
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="col-xl-4 col-md-6 mt-4 mt-lg-2">
-                        <div class="member">
-                            <div class="py-3"><img src="/assets/img/subsystem-embedded.jpg" class="img-fluid"></div>
-                            <div class="">
-                                <h2>Embedded</h2>
-                                <p>Interfacing hardware with software, designing circuit boards, and working on control systems.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-4 mt-lg-2">
-                        <div class="member">
-                            <div class="py-3"><img src="/assets/img/subsystem-communications.jpg" class="img-fluid"></div>
-                            <div class="">
-                                <h2>Communications</h2>
-                                <p>The link between the robot and its pilot. Responsible for designing systems that keep team members informed of the robot's state and health.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-4 mt-lg-2">
-                        <div class="member">
-                            <div class="py-3"><img src="/assets/img/subsystem-electrical.jpg" class="img-fluid"></div>
-                            <div class="">
-                                <h2>Electrical</h2>
-                                <p>Design of the system that connects the other subsystems with power, communications, and control.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-4 mt-lg-2">
-                        <div class="member">
-                            <div class="py-3"><img src="/assets/img/subsystem-chassis.jpg" class="img-fluid"></div>
-                            <div class="">
-                                <h2>Chassis</h2>
-                                <p>Designs and manufactures the structure the robot is based upon. It has the role of keeping other subsystems safe from damage, moving payloads from point A to point B, and acting as a platform for prototyping and development.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-4 mt-lg-2">
-                        <div class="member">
-                            <div class="py-3"><img src="/assets/img/subsystem-robotic-arm.jpg" class="img-fluid"></div>
-                            <div class="">
-                                <h2>Robotic Arm</h2>
-                                <p>Designs the primary payload of the robot. This payload is used as a platform for secondary payloads, and allows the robot to grab, move, and manipulate the world around it.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-4 mt-lg-2">
-                        <div class="member">
-                            <div class="py-3"><img src="/assets/img/subsystem-payload.jpg" class="img-fluid"></div>
-                            <div class="">
-                                <h2>Payload</h2>
-                                <p>Designs, experiments with, and automates systems on the robot. It interfaces with the systems peripherals including cameras and sensors.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
+                <div class="row" id="subsystems-div">
+                    <!-- Insert subsystems -->
                 </div>
             </div>
         </section>

@@ -11056,7 +11056,7 @@ header.masthead h1, header.masthead .h1 {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
+.team .member, .subsystem {
   /* position: relative; */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -11065,18 +11065,39 @@ header.masthead h1, header.masthead .h1 {
   /* transition: 0.5s; */
   /* height: 100%; */
 }
+.team .subsystem h2{
+  text-align: center;
+}
 
 .team .member .pic {
-  /* overflow: hidden; */
+  overflow: hidden;
   /* width: 120px; */
   /* width: 50%; */
   max-width: 120px;
+  max-height: 120px;
   /* width: 20px; */
   /* border-radius: 50%; */
-  
+  border-radius: 7px;
 }
 .team .member .pic img {
-  border-radius: 5%;
+  /* border-radius: 5%; */
+  /* object-fit: cover; */
+  /* width: 120px; */
+  min-height: 120px;
+  min-width: 120px;
+  object-fit: cover;
+}
+
+.team .subsystem .pic {
+  overflow: hidden;
+  /* width: 120px; */
+  /* width: 50%; */
+  max-height: 80px;
+  border-radius: 5px;
+}
+.team .subsystem .pic img {
+  min-width: 120px;
+  object-fit: cover;
 }
 
 /* .team .member .pic img {
@@ -11084,7 +11105,7 @@ header.masthead h1, header.masthead .h1 {
 } */
 
 .team .member .member-info {
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .team .member h4 {
@@ -11116,6 +11137,9 @@ header.masthead h1, header.masthead .h1 {
 .team .member p {
   margin: 10px 0 0 0;
   font-size: 10px;
+}
+.team .subsystem p {
+  font-size: 12px;
 }
 
 .team .member .social {

@@ -26,84 +26,81 @@ window.addEventListener('DOMContentLoaded', event => {
             // name, role, description, image
     fetch('/assets/team/team.json')
     .then((response) => response.json())
-    .then((team_json) => {
+    .then((json) => {
         const exec_team_div = document.getElementById('exec-team-div');
-        const subs_team_div = document.getElementById('subs-team-div')
+        const subsystems_div = document.getElementById('subsystems-div')
         
 
-        for (const i in team_json.exec_team) {
-            const member_block = document.querySelector('template').content.cloneNode(true);
-            const member_html = member_block.querySelector('div');
-            
-            // Add member info
-            member_html.querySelector('.name').innerHTML = team_json.exec_team[i].name;
-            member_html.querySelector('.role').innerHTML = team_json.exec_team[i].role;
-            member_html.querySelector('.description').innerHTML = team_json.exec_team[i].description;
-            
-            member_html.querySelector('img').onerror = function(){member_html.querySelector('img').src = '/assets/team/blank-profile.jpg';}
-            member_html.querySelector('img').src = `/assets/team/${team_json.exec_team[i].image}`;
-            
-            
-            // Add socials
-            const socials = team_json.exec_team[i].socials;
-            const socials_html = member_block.querySelector('.social');
-
-            // FOR EACH SOCIAL IN .socials
-            for (const j in socials) {
-                const a = document.createElement("a");
-                a.href = socials[j];
-                // add href
-                const icon = document.createElement("i");
-                icon.classList.add('bi', `bi-${j}`)
-                a.appendChild(icon);
-                // add img source
-                // add img inside a
-                // add a to socials
-                socials_html.appendChild(a);
-                // <a href=""><i class="bi-facebook"></i></a>
-                // <a href=""><i class="bi-facebook"></i></a>
-            }
-                
-            exec_team_div.appendChild(member_html);
+        for (const i in json.exec_team) {
+            populateMemberBlock(exec_team_div, json.exec_team[i])
         }
-        for (const i in team_json.subs_team) {
-            const member_block = document.querySelector('template').content.cloneNode(true);
-            const member_html = member_block.querySelector('div');
+
+
+        for (const i in json.subsystems) {
+            const subsystem_copy = document.getElementById('subsystem-template').content.cloneNode(true);
+            const subsystem_html = subsystem_copy.querySelector('div');
             
             // Add member info
-            member_html.querySelector('.name').innerHTML = team_json.subs_team[i].name;
-            member_html.querySelector('.role').innerHTML = team_json.subs_team[i].role;
-            member_html.querySelector('.description').innerHTML = team_json.subs_team[i].description;
+            subsystem_html.querySelector('.name').innerHTML = json.subsystems[i].name;
+            subsystem_html.querySelector('.description').innerHTML = json.subsystems[i].description;
             
-            member_html.querySelector('img').onerror = function(){member_html.querySelector('img').src = '/assets/team/blank-profile.jpg';}
-            member_html.querySelector('img').src = `/assets/team/${team_json.subs_team[i].image}`;
+            subsystem_html.querySelector('img').onerror = function(){subsystem_html.querySelector('img').src = '/assets/team/blank-profile.jpg';}
+            subsystem_html.querySelector('img').src = `/assets/team/${json.subsystems[i].image}`;
             
-            
-            // Add socials
-            const socials = team_json.subs_team[i].socials;
-            const socials_html = member_block.querySelector('.social');
+            console.log(i)
+            console.log(json.subsystems[i].name)
 
-            // FOR EACH SOCIAL IN .socials
-            for (const j in socials) {
-                const a = document.createElement("a");
-                a.href = socials[j];
-                // add href
-                const icon = document.createElement("i");
-                icon.classList.add('bi', `bi-${j}`)
-                a.appendChild(icon);
-                // add img source
-                // add img inside a
-                // add a to socials
-                socials_html.appendChild(a);
-                // <a href=""><i class="bi-facebook"></i></a>
-                // <a href=""><i class="bi-facebook"></i></a>
+
+            
+            
+            
+            subsystems_div.appendChild(subsystem_html);
+
+            for (const j in json.subsystems[i].leads) {
+                populateMemberBlock(subsystem_html, json.subsystems[i].leads[j], true);
             }
-                
-            subs_team_div.appendChild(member_html);
         }
     });
 });
 
+
+function populateMemberBlock(parent_div, member_json, stepBelow=false) {
+    // Copy member template
+    const member_copy = document.getElementById('member-template').content.cloneNode(true);
+    const member_html = member_copy.querySelector('div');
+    
+
+    // Add member info
+    member_html.querySelector('.name').innerHTML = member_json.name;
+    member_html.querySelector('.role').innerHTML = member_json.role;
+    member_html.querySelector('.description').innerHTML = member_json.description;
+    
+    member_html.querySelector('img').onerror = function(){member_html.querySelector('img').src = '/assets/team/blank-profile.jpg';}
+    member_html.querySelector('img').src = `/assets/team/${member_json.image}`;
+    
+    // Add socials
+    const socials = member_json.socials;
+    const socials_html = member_copy.querySelector('.social');
+
+    for (const i in socials) {
+        const a = document.createElement('a');
+        a.href = socials[i];
+        const icon = document.createElement('i');
+        icon.classList.add('bi', `bi-${i}`);
+        a.appendChild(icon);
+        socials_html.appendChild(a);
+    }
+
+    
+    if (stepBelow) {
+        // member_html = member_html.querySelector('div');
+        
+        parent_div.appendChild(member_html.querySelector('.member'));
+    }
+    else {
+        parent_div.appendChild(member_html);
+    }
+}
 
 
 /*
