@@ -4,7 +4,7 @@
 "exec_team": [
 {
     "name": "Syed Abraham Ahmed",
-    "role": "Co - President",
+    "role": "Co - President & System Lead",
     "description": "4th Year Computer Engineering Undergraduate Student",
     "image": "A.Ahmed.jpg",
     "socials": {
@@ -77,7 +77,7 @@
     "leads": [
         {
             "name": "Nikolaus Reichert",
-            "role": "Embedded Systems Lead",
+            "role": "Embedded System Lead",
             "description": "5th Year Computer Engineering Undergraduate Student",
             "image": "N.Reichert.jpg",
             "socials": {
@@ -117,7 +117,7 @@
     "leads": [
         {
             "name": "Erica von Stackelberg",
-            "role": "Business Director",
+            "role": "Electrical System Co-Lead",
             "description": "5th Year Electrical Engineering Undergraduate Student",
             "image": "E.Stackelberg.jpg",
             "socials": {
