@@ -146,13 +146,6 @@
     "image": "subsystem-robotic-arm.jpg",
     "leads": [
         {
-            "name": "Ghrum Yemessghen",
-            "role": "Robotic Arm System Co-Lead",
-            "description": "4th Year Mechanical Engineering Undergraduate Student",
-            "image": "G.Yemessghen.jpg",
-            "socials": {}
-        },
-        {
             "name": "Graham Nash",
             "role": "Robotic Arm System Co-Lead",
             "description": "",
