@@ -11058,7 +11058,8 @@ header.masthead h1, header.masthead .h1 {
 --------------------------------------------------------------*/
 .team .member, .subsystem {
   /* position: relative; */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.35);
   padding: 10px;
   border-radius: 5px;
   background: var(--member-background );
@@ -11077,14 +11078,15 @@ header.masthead h1, header.masthead .h1 {
   max-height: 120px;
   /* width: 20px; */
   /* border-radius: 50%; */
-  border-radius: 7px;
+  
 }
 .team .member .pic img {
   /* border-radius: 5%; */
   /* object-fit: cover; */
   /* width: 120px; */
-  min-height: 120px;
-  min-width: 120px;
+  /* min-height: 120px; */
+  /* min-width: 120px; */
+  border-radius: 7px;
   object-fit: cover;
 }
 
