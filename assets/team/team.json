@@ -161,11 +161,19 @@
     "leads": [
         {
             "name": "Breanna Stratton",
-            "role": "Payload System Lead",
+            "role": "Payload System Co-Lead",
             "description": "5th Year Computer Engineering Undergraduate Student",
             "image": "B.Stratton.jpg",
             "socials": {
                 "linkedin": "https://www.linkedin.com/in/breanna-stratton-278b8a1a1/"
+            }
+        },
+        {
+            "name": "Skylar Trudeau",
+            "role": "Payload System Co-Lead",
+            "description": "Computer Engineering Undergraduate Student",
+            "image": "blank-head.jpg",
+            "socials": {
             }
         }
     ]
