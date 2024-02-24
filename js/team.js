@@ -28,14 +28,42 @@ window.addEventListener('DOMContentLoaded', event => {
     .then((response) => response.json())
     .then((json) => {
         const exec_team_div = document.getElementById('exec-team-div');
+        const leads_div = document.getElementById('leads-div')
         const subsystems_div = document.getElementById('subsystems-div')
         
-
+        // populate exec
         for (const i in json.exec_team) {
             populateMemberBlock(exec_team_div, json.exec_team[i])
         }
 
+        // populate leads
+        for (const i in json.leads) {
+            const subsystem_copy = document.getElementById('subsystem-template').content.cloneNode(true);
+            const subsystem_html = subsystem_copy.querySelector('div');
+            
+            // Add member info
+            subsystem_html.querySelector('.name').innerHTML = json.leads[i].name;
+            subsystem_html.querySelector('.description').innerHTML = json.leads[i].description;
+            
+            //subsystem_html.querySelector('img').onerror = function(){subsystem_html.querySelector('img').src = '/assets/team/blank-profile.jpg';}
+            subsystem_html.querySelector('img').onerror = function(){subsystem_html.querySelector('img').style.display = "none"}
+            subsystem_html.querySelector('img').src = `/assets/team/${json.leads[i].image}`;
+            
+            //console.log(i)
+            //console.log(json.subsystems[i].name)
+            
 
+            
+            
+            
+            leads_div.appendChild(subsystem_html);
+
+            for (const j in json.leads[i].leads) {
+                populateMemberBlock(subsystem_html, json.leads[i].leads[j], true);
+            }
+        }
+
+        // populate subsystems
         for (const i in json.subsystems) {
             const subsystem_copy = document.getElementById('subsystem-template').content.cloneNode(true);
             const subsystem_html = subsystem_copy.querySelector('div');
@@ -47,8 +75,8 @@ window.addEventListener('DOMContentLoaded', event => {
             subsystem_html.querySelector('img').onerror = function(){subsystem_html.querySelector('img').src = '/assets/team/blank-profile.jpg';}
             subsystem_html.querySelector('img').src = `/assets/team/${json.subsystems[i].image}`;
             
-            console.log(i)
-            console.log(json.subsystems[i].name)
+            //console.log(i)
+            //console.log(json.subsystems[i].name)
 
 
             

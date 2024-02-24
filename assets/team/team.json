@@ -4,7 +4,7 @@
 "exec_team": [
 {
     "name": "Syed Abraham Ahmed",
-    "role": "Co - President & System Lead",
+    "role": "Co - President",
     "description": "4th Year Computer Engineering Undergraduate Student",
     "image": "A.Ahmed.jpg",
     "socials": {
@@ -67,6 +67,25 @@
     "socials": {
         "linkedin": "https://www.linkedin.com/in/breanna-stratton-278b8a1a1/"
     }
+}
+],
+"leads":[
+{
+    "name": "System Lead",
+    "description": "",
+    "image": "subsystem-lead.jpg",
+    "leads": [
+        {
+            "name": "Syed Abraham Ahmed",
+            "role": "System Lead",
+            "description": "4th Year Computer Engineering Undergraduate Student",
+            "image": "A.Ahmed.jpg",
+            "socials": {
+                "linkedin": "https://www.linkedin.com/in/syed-abraham-ahmed/",
+                "instagram": "https://www.instagram.com/abragraphs"
+            }
+        }
+    ]
 }
 ],
 "subsystems":[
