@@ -106,6 +106,14 @@ function populateMemberBlock(parent_div, member_json, stepBelow=false) {
     member_html.querySelector('img').onerror = function(){member_html.querySelector('img').src = '/assets/team/blank-profile.jpg';}
     member_html.querySelector('img').src = `/assets/team/${member_json.image}`;
     
+
+    if (member_json.role.includes("Webmaster")) {
+        member_html.querySelector('.role').classList.add("flex")
+        member_html.querySelector('.role').innerHTML = member_json.role.replace('Webmaster', '<w class="webmaster" style="">Webmaster</w>');
+    }
+
+
+
     // Add socials
     const socials = member_json.socials;
     const socials_html = member_copy.querySelector('.social');

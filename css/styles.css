@@ -11227,6 +11227,35 @@ header.masthead h1, header.masthead .h1 {
 }
 
 
+.webmaster {
+  transition: transform 7s linear;
+  display: inline-block
+}
+.webmaster:hover {
+  /* display: flex; */
+  /* transform: rotate(100deg); */
+  /* display: flex; */
+  /* color: red; */
+  /* transform: rotate(36000deg); */
+  animation: rainbow .2s linear infinite;
+	/* animation-iteration-count: 2; */
+}
+
+@keyframes rainbow{
+  100%,0%{color: rgb(100,0,0);}
+  8%  {color: rgb(100,50,0);}
+  16% {color: rgb(100,100,0);}
+  50% {color: rgb(50,100,0);}
+  33% {color: rgb(0,100,0);}
+  41% {color: rgb(0,100,50);}
+  100% {color: rgb(0,100,100);}
+  58% {color: rgb(0,50,100);}
+  66% {color: rgb(0,0,100);}
+  75% {color: rgb(50,0,100);}
+  83% {color: rgb(100,0,100);}
+  91% {color: rgb(100,0,50);}
+}
+
 
 
 
