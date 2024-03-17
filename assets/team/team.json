@@ -125,7 +125,9 @@
             "role": "Communications System Co-Lead",
             "description": "",
             "image": "blank-head.jpg",
-            "socials": {}
+            "socials": {
+                "linkedin": "https://www.linkedin.com/in/adam-garofalo-846105204/"
+            }
         }
     ]
 },
@@ -169,7 +171,18 @@
             "role": "Robotic Arm System Lead",
             "description": "",
             "image": "G.Nash.jpg",
-            "socials": {}
+            "socials": {
+                "linkedin": "https://www.linkedin.com/in/grahamhnash/"
+            }
+        },
+        {
+            "name": "Noah Reeder",
+            "role": "Robotic Arm Software Lead",
+            "description": "",
+            "image": "blank-head.jpg",
+            "socials": {
+                "linkedin": "https://www.linkedin.com/in/noah-reeder-b09686189/"
+            }
         }
     ]
 },
@@ -193,6 +206,7 @@
             "description": "Computer Engineering Undergraduate Student",
             "image": "blank-head.jpg",
             "socials": {
+                "linkedin": "https://www.linkedin.com/in/skylar-trudeau/"
             }
         }
     ]
