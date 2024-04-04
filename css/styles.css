@@ -11259,6 +11259,11 @@ header.masthead h1, header.masthead .h1 {
 
 
 
+.sponsor {
+  max-height: 300px;
+}
+
+
 
 
 div {
