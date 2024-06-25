@@ -89,6 +89,10 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         }
     });
+
+
+
+    populateCarousel();
 });
 
 
@@ -150,3 +154,30 @@ function addAttemptElement(value) {
 }
 
 */
+
+
+
+function populateCarousel() {
+    const photodiv = document.getElementById("carousel-photos")
+    const showcasePath = "/assets/showcase/"
+
+    fetch('/assets/showcase/paths.json')
+    .then((response) => response.json())
+    .then((json) => {
+
+        const randomIndex = Math.floor(Math.random() * Object.keys(json.paths).length)
+        
+        for (const i in json.paths) {
+            // console.log(i + ": " + json.paths[i]);
+            const template_copy = document.getElementById('carousel-template').content.cloneNode(true);
+            const template_html = template_copy.querySelector('div');
+
+            if (i == randomIndex) {
+                template_html.classList.add("active");
+            }
+            template_html.querySelector('img').src = showcasePath + json.paths[i];
+
+            photodiv.appendChild(template_html);
+        }
+    });
+}
