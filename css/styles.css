@@ -10967,7 +10967,8 @@ header.masthead.team {
   background-size: cover;
 }
 header.masthead.competitions {
-  background: linear-gradient(to bottom, rgba(5, 34, 91, 0.3) 0%, rgba(5, 34, 91, 0.4) 100%), url("/assets/img/bare-desert.jpg"); 
+  /* background: linear-gradient(to bottom, rgba(5, 34, 91, 0.3) 0%, rgba(5, 34, 91, 0.4) 100%), url("/assets/img/bare-desert.jpg");  */
+  background: linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), url("/assets/img/CIRC-2024.jpg"); 
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
