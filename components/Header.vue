@@ -80,11 +80,15 @@ html:is([data-scroll='0']) nav {
 nav {
   background-color: #24252900;
   box-shadow: none;
+
+  /* transition: background-color 0.2s ease; */
+  transition: all 0.4s ease;
 }
 html:is([data-scroll='1']) nav {
   background-color: #242529;
   color: #ffffff;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
+  box-shadow: 0 0 15px 0px #000000FF;
 }
 
 

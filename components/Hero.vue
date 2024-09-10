@@ -1,6 +1,6 @@
 <template>
   <!-- <div class="masthead" :style="background: linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), URL(bgImgUrl)"> -->
-    <div class="masthead" :style="heroStyle">
+  <div class="masthead" :style="heroStyle">
     <div class="container px-4 px-lg-5 h-80">
       <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
 
@@ -21,17 +21,20 @@
             <!-- <h1>University of Manitoba Robotics Team</h1> -->
             <h1 class="text-white font-weight-bold">{{  title  }}</h1>
             <!-- <h1> Also {{ showLogo }} !!</h1> -->
+            <slot></slot>
           </div>
 
         <!-- Only Title -->
         <div v-if="showLogo == false">
           <h1 class="text-white font-weight-bold">{{  title  }}</h1>
+          <slot></slot>
         </div>
 
 
       </div>
     </div>
   </div>
+  <div class="mastheadHolder"></div>
 </template>
 
 
@@ -41,6 +44,7 @@ const props = defineProps({
   title: { type: String, required: true },
   imgSrc: { type: String, required: true },
   showLogo: { type: Boolean, required: false, default: false },
+  backgroundPosition: { type: String, default: "center" }
 })
 
 
@@ -48,7 +52,8 @@ const heroStyle = computed(() => ({
   // background: `linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), url(${props.imgSrc})`,
   background: `linear-gradient(to bottom, rgba(99, 109, 128, 0.7) 0%, rgba(52, 58, 69, 0.9) 100%), url(${props.imgSrc})`,
   // background: `url(${props.src})`,
-  backgroundPosition: 'center',
+  // backgroundPosition: 'center',
+  backgroundPosition: props.backgroundPosition,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundAttachment: 'scroll',
@@ -56,6 +61,8 @@ const heroStyle = computed(() => ({
 
 
   // boxShadow: 'inset 0px -32px 16px -16px #F8F9FA'
+  position: 'fixed',
+  width: '100%',
 }))
 
 </script>
@@ -76,5 +83,15 @@ const heroStyle = computed(() => ({
     height: 100vh;
     display: flex;
     justify-content: center;
+
+
+    /* position:fixed;
+    top:0;
+    z-index: 1; */
+    /* opacity: 90%; */
+    z-index: -1;
+  }
+  .mastheadHolder {
+    height: 100vh;
   }
 </style>
