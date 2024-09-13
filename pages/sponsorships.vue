@@ -13,6 +13,6 @@
 
 
 <script setup>
-  import HeroImg from "@/assets/images/CIRC-2024.jpg"
+  import HeroImg from "@/assets/images/JCA_ROS_Event.jpg"
   import Section from "~/components/Section.vue"
 </script>

@@ -4,26 +4,44 @@
     <div class="container px-4 px-lg-5 h-80">
       <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
 
-
-
+        <!-- MOVE WITH SCROLL -->
 
         <!-- Logo and Title -->
-        <!-- <div v-if="showLogo"> -->
-          <div v-if="showLogo" class="col-lg-5 align-self-end">
-          <!-- <div :showLogo="true" class="col-lg-5 align-self-end"> -->
+          <!-- <div v-if="showLogo" class="col-lg-5 align-self-end">
             <img src="/assets/images/umrt-logo-transparent.png" class="img-fluid" style="max-height: 50vh;" alt="">
-            <!-- <img src="/assets/images/umrt-logo-transparent.png" class="img-fluid" alt=""> -->
-            <!-- <img :src="fgImgUrl" class="img-fluid" alt=""> -->
           </div>
-
           <div v-if="showLogo" class="col-lg-8 align-self-baseline">
-            <!-- <h1 class="text-white font-weight-bold">University of Manitoba Robotics Team</h1> -->
-            <!-- <h1>University of Manitoba Robotics Team</h1> -->
             <h1 class="text-white font-weight-bold">{{  title  }}</h1>
-            <!-- <h1> Also {{ showLogo }} !!</h1> -->
+            <slot></slot>
+          </div> -->
+
+        <!-- Only Title -->
+        <!-- <div v-if="showLogo == false">
+          <h1 class="text-white font-weight-bold">{{  title  }}</h1>
+          <slot></slot>
+        </div> -->
+
+
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <div class="mastheadHolder">
+
+    <div class="container px-4 px-lg-5 h-80">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <!-- Logo and Title -->
+          <div v-if="showLogo" class="col-lg-5 align-self-end">
+            <img src="/assets/images/umrt-logo-transparent.png" class="img-fluid" style="max-height: 50vh;" alt="">
+          </div>
+          <div v-if="showLogo" class="col-lg-8 align-self-baseline">
+            <h1 class="text-white font-weight-bold">{{  title  }}</h1>
             <slot></slot>
           </div>
-
+        
         <!-- Only Title -->
         <div v-if="showLogo == false">
           <h1 class="text-white font-weight-bold">{{  title  }}</h1>
@@ -34,7 +52,8 @@
       </div>
     </div>
   </div>
-  <div class="mastheadHolder"></div>
+
+
 </template>
 
 
@@ -50,7 +69,12 @@ const props = defineProps({
 
 const heroStyle = computed(() => ({
   // background: `linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), url(${props.imgSrc})`,
-  background: `linear-gradient(to bottom, rgba(99, 109, 128, 0.7) 0%, rgba(52, 58, 69, 0.9) 100%), url(${props.imgSrc})`,
+  // background: `linear-gradient(to bottom, rgba(99, 109, 128, 0.7) 0%, rgba(52, 58, 69, 0.9) 100%), url(${props.imgSrc})`,
+  background: `linear-gradient(to bottom, 
+    rgba(99, 109, 128, 0.7) 0%, 
+    rgba(52, 58, 69, 0.9) 95%,
+    rgba(52, 58, 69, 1) 100%
+    ), url(${props.imgSrc})`,
   // background: `url(${props.src})`,
   // backgroundPosition: 'center',
   backgroundPosition: props.backgroundPosition,
@@ -64,6 +88,21 @@ const heroStyle = computed(() => ({
   position: 'fixed',
   width: '100%',
 }))
+
+
+function parallax() {
+    // var s = document.getElementById("masthead");
+    var s= document.getElementsByClassName("masthead")[0];
+  var yPos = 0 - window.pageYOffset/3;  
+  s.style.top = 50 -50 + yPos + "px"; }
+
+  onMounted(() => {
+    parallax(); 
+    window.addEventListener("scroll", function(){
+    parallax(); 
+});
+  })
+
 
 </script>
 
@@ -93,5 +132,9 @@ const heroStyle = computed(() => ({
   }
   .mastheadHolder {
     height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 </style>

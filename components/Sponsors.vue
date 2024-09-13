@@ -1,14 +1,21 @@
 <template>
   <Section theme="light">
-    <h2 class="mt-0">Sponsors</h2>
+    <h2 class="mt-0">Our Sponsors</h2>
     <hr class="divider divider-light" />
 
     <div class="row row-cols-1 row-cols-lg-2 d-flex justify-content-center">
-      <div class="col d-flex align-self-center align-items-center">
+
+      <Sponsor :imgSrc="LOGO_EEF"></Sponsor>
+      <Sponsor :imgSrc="LOGO_PTX"></Sponsor>
+      <Sponsor :imgSrc="LOGO_G3"></Sponsor>
+      <Sponsor :imgSrc="LOGO_MD"></Sponsor>
+      <!-- <Sponsor href="YO"></Sponsor> -->
+
+
+      <!-- <div class="col d-flex align-self-center align-items-center">
           <img class="img-fluid mx-auto" src="/assets/images/sponsors/EngineeringEndowmentFundColour.png">
       </div>
       <div class="col d-flex align-self-center align-items-center">
-          <!-- <img class="img-fluid mx-auto sponsor" src="/assets/img/sponsors/JCATechnologiesSquare.jpg"> -->
           <img class="img-fluid mx-auto sponsor" src="/assets/images/sponsors/PTx_Trim_RGB.svg">
       </div>
       <div class="col d-flex align-self-center align-items-center">
@@ -16,15 +23,16 @@
       </div>
       <div class="col d-flex align-self-center align-items-center">
           <img class="img-fluid mx-auto sponsor" src="/assets/images/sponsors/MacDon_RGB.svg">
-      </div>
-      <!-- Insert 'col' item with different sponsor image -->
-      <!-- <div class="col d-flex align-self-center">
-          <img class="img-fluid" src="/assets/img/sponsors/SolidWorks_RedOnTransparent.png">
       </div> -->
   </div>
   <hr class="divider divider-light" />
   <div class="row row-cols-2 row-cols-lg-4 d-flex justify-content-center">
-      <div class="col d-flex align-self-center">
+    <Sponsor :imgSrc="LOGO_7O"></Sponsor>
+    <Sponsor :imgSrc="LOGO_NFI"></Sponsor>
+    <Sponsor :imgSrc="LOGO_SW"></Sponsor>
+    <Sponsor :imgSrc="LOGO_AL"></Sponsor>
+    <Sponsor :imgSrc="LOGO_OB"></Sponsor>
+      <!-- <div class="col d-flex align-self-center">
           <a href="" target="."><img class="img-fluid" src="/assets/images/sponsors/SevenOaksColour.svg"></a>
       </div>
       <div class="col d-flex align-self-center">
@@ -34,15 +42,10 @@
           <a href="https://www.3ds.com/" target="."><img class="img-fluid" src="/assets/images/sponsors/SolidWorks_RedOnTransparent.png"></a>
       </div>
       <div class="col d-flex align-self-center">
-          <!-- <a href="https://www.altium.com/" target="."><img class="img-fluid" src="/assets/img/sponsors/Altium_Logo_BLK.svg"></a> -->
           <img class="img-fluid" src="/assets/images/sponsors/Altium_Logo_BLK.svg">
       </div>
       <div class="col d-flex align-self-center">
           <a href="" target="."><img class="img-fluid" src="/assets/images/sponsors/Outstanding+Branding+Primary+Horizontal.png"></a>
-      </div>
-      <!-- Insert 'col' item with different sponsor image -->
-      <!-- <div class="col d-flex align-self-center">
-          <img class="img-fluid" src="/assets/img/sponsors/SolidWorks_RedOnTransparent.png">
       </div> -->
   </div>
 
@@ -52,4 +55,20 @@
 
 <script setup>
   import Section from "~/components/Section.vue"
+  import Sponsor from "~/components/Sponsor.vue"
+  
+  import img1 from "@/assets/images/sponsors/MacDon_RGB.svg"
+
+import LOGO_EEF from "@/assets/images/sponsors/EngineeringEndowmentFundColour.png"
+import LOGO_PTX from "@/assets/images/sponsors/PTx_Trim_RGB.svg"
+import LOGO_G3 from "@/assets/images/sponsors/G3_Symbol_Colour.svg"
+import LOGO_MD from "@/assets/images/sponsors/MacDon_RGB.svg"
+
+import LOGO_7O from "@/assets/images/sponsors/SevenOaksColour.svg"
+import LOGO_NFI from "@/assets/images/sponsors/NFI_Group_logo_2019.svg"
+import LOGO_SW from "@/assets/images/sponsors/SolidWorks_RedOnTransparent.png"
+import LOGO_AL from "@/assets/images/sponsors/Altium_Logo_BLK.svg"
+import LOGO_OB from "@/assets/images/sponsors/Outstanding+Branding+Primary+Horizontal.png"
+
+
 </script>

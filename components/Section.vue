@@ -66,5 +66,7 @@
   </script>
   
   <style scoped>
-    
+  .page-section {
+    padding: 4rem 0;
+  }
   </style>

@@ -10,7 +10,7 @@
     <div class="container px-4 px-lg-5">
       <div class="small text-center text-muted">
       <!-- Copyright &copy; 2024 - UMRT | -->
-      &copy; 2024 - UMRT |
+      &copy; 2024 UMRT |
       <a href="https://github.com/UMRoboticsTeam/UMRT-Website">Source Code</a>
       </div>
     </div>

@@ -32,10 +32,10 @@ const glob = import.meta.glob('@/assets/images/showcase/*.jpg', { eager: true })
 // var glob = import.meta.glob('@/assets/images/showcase/*.JPG', { eager: true })
 
 // glob = {...glob, ...newGlob}
-console.log("STARTING ONE")
-console.log(glob)
-console.log("STARTING TWO")
-console.log(Object(glob))
+// console.log("STARTING ONE")
+// console.log(glob)
+// console.log("STARTING TWO")
+// console.log(Object(glob))
 
 
 
