@@ -83,7 +83,8 @@
 
 
 
-  --background: #f8f9fa;
+  /* --background: #f8f9fa; */
+  --background: rgb(33, 37, 41);
   --nav-background: #ffffffe5;
   --member-background: #fefefe;
   --member-social-color: #354462;
