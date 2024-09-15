@@ -1,1 +1,0 @@
-import{_ as o,v as s,x as t,t as a}from"./CtHJ76Ro.js";const n={};function r(l,e,p,c,u,i){return a(),s("div",null,e[0]||(e[0]=[t("h1",null,"ABOUT SECTION",-1),t("p",null,"This is the about page.",-1)]))}const d=o(n,[["render",r]]);export{d as default};

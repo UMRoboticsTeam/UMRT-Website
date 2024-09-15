@@ -34,16 +34,16 @@
     <div class="container px-4 px-lg-5 h-80">
       <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
         <!-- Logo and Title -->
-          <div v-if="showLogo" class="col-lg-5 align-self-end">
+          <div v-if="showLogo == 'true'" class="col-lg-5 align-self-end">
             <img src="/assets/images/umrt-logo-transparent.png" class="img-fluid" style="max-height: 50vh;" alt="">
           </div>
-          <div v-if="showLogo" class="col-lg-8 align-self-baseline">
+          <div v-if="showLogo == 'true'" class="col-lg-8 align-self-baseline">
             <h1 class="text-white font-weight-bold">{{  title  }}</h1>
             <slot></slot>
           </div>
         
         <!-- Only Title -->
-        <div v-if="showLogo == false">
+        <div v-if="showLogo != 'true'">
           <h1 class="text-white font-weight-bold">{{  title  }}</h1>
           <slot></slot>
         </div>
@@ -62,7 +62,7 @@
 const props = defineProps({
   title: { type: String, required: true },
   imgSrc: { type: String, required: true },
-  showLogo: { type: Boolean, required: false, default: false },
+  showLogo: { type: String, required: false, default: "false" },
   backgroundPosition: { type: String, default: "center" }
 })
 
