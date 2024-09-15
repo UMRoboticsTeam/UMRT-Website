@@ -1,75 +1,23 @@
-# Nuxt 3 Minimal Starter
+# UMRT Official Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to the official website of the University of Manitoba Robotics Team (UMRT), hosted on GitHub Pages. The site is built using Vue and the Nuxt framework.
 
-## Setup
+Check out our website at [umrt.ca](https://umrt.ca)!
 
-Make sure to install the dependencies:
+## Updating the Website
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+To preview changes live, run the following command:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+This will host a live preview at http://localhost:5500.
 
-Build the application for production:
+Once modifications are complete, generate the static HTML files for GitHub Pages by running:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+npm run generate
 ```
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+After pushing your changes to the main branch, the workflow will automatically extract the contents from ```/.output/public``` into the ```gh-pages``` branch, reflecting the changes under the official domain.

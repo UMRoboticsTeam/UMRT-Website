@@ -155,6 +155,17 @@
   //   Object.entries(glob).map(([key, value]) => [key, value.default])
   // )
 
+  useHead({
+  title: "The Team",
+  meta: [
+    { name: 'description', content: 'Team and member information of UMRT' },
+    { property: 'og:title', content: 'UMRT - The Team' },
+    { property: 'og:description', content: 'Team and member information of UMRT' },
+    // { property: 'og:image', content: '' },
+    // { property: 'og:url', content: '' },
+  ]
+})
+
 const memberss = {
 "exec_team": [
   {

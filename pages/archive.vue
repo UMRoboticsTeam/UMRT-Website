@@ -73,10 +73,13 @@ import Section from "~/components/Section.vue"
 //   name: 'Team Archive',
 // })
 useHead({
-  title: "TITLE",
-  meta: [{
-    // name: 'description',
-    // content: "actual description"
-  }]
+  title: "Archive",
+  meta: [
+    { name: 'description', content: 'Info and file archives of UMRT' },
+    { property: 'og:title', content: 'UMRT - Archive' },
+    { property: 'og:description', content: 'Info and file archives of UMRT' },
+    // { property: 'og:image', content: '' },
+    // { property: 'og:url', content: '' },
+  ]
 })
 </script>

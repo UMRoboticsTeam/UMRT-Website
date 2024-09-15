@@ -55,6 +55,17 @@
   import HeroImg from "@/assets/images/CIRC-2024.jpg"
   import Section from "~/components/Section.vue"
   import CIRCLogo from "@/assets/images/CIRC_banner.png"
+
+useHead({
+  title: "Competitions",
+  meta: [
+    { name: 'description', content: 'Competitions information of UMRT' },
+    { property: 'og:title', content: 'UMRT - Competitions' },
+    { property: 'og:description', content: 'Competitions information of UMRT' },
+    // { property: 'og:image', content: '' },
+    // { property: 'og:url', content: '' },
+  ]
+})
 </script>
 
 

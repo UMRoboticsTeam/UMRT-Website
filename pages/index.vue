@@ -173,4 +173,15 @@
 //     };
 //   }
 // };
+
+useHead({
+  title: "University of Manitoba Robotics Team",
+  meta: [
+    { name: 'description', content: 'UMRT Homepage' },
+    { property: 'og:title', content: 'University of Manitoba Robotics Team' },
+    { property: 'og:description', content: 'UMRT Homepage' },
+    // { property: 'og:image', content: '' },
+    // { property: 'og:url', content: '' },
+  ]
+})
 </script>

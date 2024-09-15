@@ -16,8 +16,34 @@ export default defineNuxtConfig({
       // link: [
       //   { rel: 'stylesheet', href: './assets/styles.css' }
       // ],
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
+        { name: 'description', content: 'The University of Manitoba Robotics Team (UMRT) Official Website' },
+        { name: 'keywords', content: 'University, Manitoba, Robotics, Team' },
+        { property: 'og:title', content: 'UMRT - University of Manitoba Robotics Team' },
+        { property: 'og:description', content: 'The University of Manitoba Robotics Team (UMRT) Official Website' },
+        // { property: 'og:image', content: '/default-image.jpg' },
+        { property: 'og:url', content: 'https://umrt.ca' },
+        // { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'University of Manitoba Robotics Team' },
+        { name: 'twitter:description', content: 'The University of Manitoba Robotics Team (UMRT) Official Website' },
+        // { name: 'twitter:image', content: '/default-twitter-image.jpg' }
+      ],
       script: [
-        { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' }
+        // Bootstrap
+        { 
+          src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js' 
+        },
+        
+        // Google tag:
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-8G9J1TNZXN",
+          async: "true"
+        },
+        {
+          innerHTML: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-8G9J1TNZXN');`
+        }
       ],
     },
   },
