@@ -1,5 +1,5 @@
 <template>
-  <div class="col-xl-4 col-md-6 ">
+  <!-- <div class="col-xl-4 col-md-6 "> -->
     <div class="member d-flex my-2">
       <div class="pic">
         <img :src="img" class="img-fluid" alt="member image">
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </template>
   
 

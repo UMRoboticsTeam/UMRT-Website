@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero title="Competitions" :imgSrc="HeroImg"/>
-    <Section theme="light">
+    <Section theme="dark">
       <p>
         The University of Manitoba Robotics Team currently competes in the Canadian International Rover Challenge
         held in Drumheller, AB.

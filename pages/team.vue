@@ -3,17 +3,29 @@
     <Hero title="The Team" :imgSrc="HeroImg"/>
     <Section theme="dark">
       <p>
-        The University of Manitoba Robotics Team currently competes in the Canadian International Rover Competition
-        held in Drumheller, AB.
-        
+        <!-- The University of Manitoba Robotics Team currently competes in the Canadian International Rover Competition
+        held in Drumheller, AB. -->
+        <!-- The University of Manitoba Robotics Team, formed in 2023, is composed of robotics passionate students from the University of Manitoba.
+        The team members come from a variety of acadmeic faculties, primarily the Engineering and Science faculties. -->
+        The University of Manitoba Robotics Team (UMRT), established in 2023, is a dynamic group of students 
+        united by a shared passion for robotics and innovation. Drawing talent from a diverse range of academic 
+        disciplines, the team primarily consists of members from the Engineering and Science faculties. Together, 
+        they leverage their unique skills and expertise to build effective robotics solutions for competitive challenges.
+
       </p>
-    </Section>
-    <Section theme="light">
-      <!-- <TeamMember img="" name="Connor Pagtakhan" role="Treasurer & Webmaster" desc="4th Year Computer Engineering Student" socials=""/> -->
+      
+      
+      
     </Section>
 
+  <Section theme="primary">
+    <Carousel />
+  </Section>
+
+
     <Section theme="light" class="page-section team" id="team">
-      <div class="container px-4 px-lg-5">
+      <!-- <div class="container px-4 px-lg-5"> -->
+      <div class="container px-1 px-lg-2">
         <h2 class="text-center mt-0">Executive Team</h2>
         <hr class="divider" />
         <!-- <div id="exec-team-div" class="row d-flex justify-content-center">
@@ -24,13 +36,15 @@
         </div> -->
 
         <div id="exec-team-div" class="row d-flex justify-content-center">
-          <TeamMember v-for="exec in memberss['exec_team']" 
+          <div class="col-xl-4 col-md-6 " v-for="exec in memberss['exec_team']" >
+          <TeamMember 
             :img="members[exec['image']]" 
             :name="exec['name']" 
             :role="exec['role']" 
             :desc="exec['description']" 
             :socials="JSON.stringify(exec['socials'])"
             />
+          </div>
         </div>
       </div>
     </Section>
@@ -44,7 +58,8 @@
     </Section>
 
     <Section theme="light" class="page-section team">
-      <div class="container px-4 px-lg-5">
+      <!-- <div class="container px-4 px-lg-5"> -->
+      <div class="container px-1 px-lg-2">
         <h2 class="text-center mt-0">Subsystem Leads</h2>
         <hr class="divider" />
         <!-- <div id="exec-team-div" class="row d-flex justify-content-center">
@@ -54,7 +69,7 @@
           <TeamMember :img='members["C.Pagtakhan"]' name="Connor Pagtakhan" role="Treasurer & Webmaster" desc="4th Year Computer Engineering Student" socials='{"instagram": "https://www.instagram.com/cpagtakhan/", "linkedin": "https://www.linkedin.com/in/connor-pagtakhan-5a617b206/"}'/>
         </div> -->
 
-        <div id="exec-team-div" class="row d-flex justify-content-center">
+        <!-- <div id="exec-team-div" class="row d-flex justify-content-center">
           <TeamMember v-for="exec in memberss['exec_team']" 
             :img="members[exec['image']]" 
             :name="exec['name']" 
@@ -62,11 +77,48 @@
             :desc="exec['description']" 
             :socials="JSON.stringify(exec['socials'])"
             />
+        </div> -->
+
+        <!-- <div class="container px-4 px-lg-5">       -->
+        <div class="row d-flex justify-content-center" id="leads-div">
+          <!-- Insert subsystems leads -->
+          <TeamSystem v-for="system in memberss['leads']" :img="members[system['image']]" :name="system['name']" :desc="system['description']">
+            <!-- <div class="col-xl-4 col-md-6 "> -->
+              <TeamMember v-for="exec in system['leads']" 
+                :img="members[exec['image']]" 
+                :name="exec['name']" 
+                :role="exec['role']" 
+                :desc="exec['description']" 
+                :socials="JSON.stringify(exec['socials'])"
+                />
+            <!-- </div> -->
+          </TeamSystem>
         </div>
+        <!-- </div> -->
+        <!-- <div class="container px-4 px-lg-5"> -->
+        <div class="row d-flex justify-content-center" id="subsystems-div">
+          <!-- Insert subsystems -->
+          <TeamSystem v-for="system in memberss['subsystems']" :img="members[system['image']]" :name="system['name']" :desc="system['description']">
+            <!-- <div class="col-xl-4 col-md-6 "> -->
+              <TeamMember v-for="exec in system['leads']" 
+                :img="members[exec['image']]" 
+                :name="exec['name']" 
+                :role="exec['role']" 
+                :desc="exec['description']" 
+                :socials="JSON.stringify(exec['socials'])"
+                />
+            <!-- </div> -->
+          </TeamSystem>
+        </div>
+        <!-- </div> -->
+
       </div>
     </Section>
+
+    
   </div>
 </template>
+
 
 
 <script setup>

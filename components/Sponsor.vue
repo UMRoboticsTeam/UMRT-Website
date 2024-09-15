@@ -3,10 +3,10 @@
     <img class="img-fluid mx-auto" src="/assets/images/sponsors/EngineeringEndowmentFundColour.png">
   </div> -->
   <div class="col d-flex align-self-center justify-content-center" style="margin: 20px 0px;">
-    <a v-if="href" :href="href" target=".">
+    <a v-if="href" :href="href" target="." :title="tooltip">
       <img class="img-fluid" :src="imgSrc">
     </a>
-    <a v-else>
+    <a v-else :title="tooltip">
       <img class="img-fluid" :src="imgSrc">
     </a>
   </div>
@@ -21,5 +21,6 @@
 const props = defineProps({
   imgSrc: { type: String, required: true },
   href: { type: String, required: false },
+  tooltip: { type: String, required: false },
 })
 </script>
