@@ -17,10 +17,10 @@
 
     <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-shrink" id="mainNav"> -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 navbar-shrink" id="mainNav">
-      <div class="container px-2 px-lg-2">
+      <div class="container px-4 px-lg-2">
         <!-- <img :src="UMRTLogo" class="" style="height: 32px; padding: 0; margin: 0;"> -->
-        <!-- <a class="navbar-brand" href="/#page-top">UofM Robotics Team</a> -->
-        <a class="navbar-brand" href="/">UofM Robotics Team</a>
+        <!-- <a class="navbar-brand" href="/">UofM Robotics Team</a> -->
+        <a class="navbar-brand" href="/">UMRT</a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -49,14 +49,6 @@
 </script>
 
 <script setup>
-// export default {
-// props: {
-//     title: {
-//     type: String,
-//     default: 'Welcome to My Nuxt App'
-//     }
-// }
-// }
 // import UMRTLogo from "@/assets/images/umrt-logo-transparent.png"
 
 onMounted(() => {

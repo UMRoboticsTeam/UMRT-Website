@@ -36,9 +36,9 @@
         </div> -->
 
         <div id="exec-team-div" class="row d-flex justify-content-center">
-          <div class="col-xl-4 col-md-6 " v-for="exec in memberss['exec_team']" >
+          <div class="col-xl-4 col-md-6 " v-for="exec in teamList['exec_team']" >
           <TeamMember 
-            :img="members[exec['image']]" 
+            :img="teamImages[exec['image']]" 
             :name="exec['name']" 
             :role="exec['role']" 
             :desc="exec['description']" 
@@ -57,6 +57,28 @@
       </p>
     </Section>
 
+    <Section theme="dark" title="About Subsystems">
+      <div class="row d-flex justify-content-center">
+
+        <div v-for="system in teamList['leads']" class="system-info col-xl-4 col-md-6">
+          <i :class="`bi bi-${ system['icon'] }`"></i>
+          <!-- <div> -->
+            <h4>{{ system['name'] }}</h4>
+            <p>{{ system['description'] }}</p>
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div v-for="system in teamList['subsystems']" class="system-info col-xl-4 col-md-6">
+          <i :class="`bi bi-${ system['icon'] }`"></i>
+          <!-- <div> -->
+            <h4>{{ system['name'] }}</h4>
+            <p>{{ system['description'] }}</p>
+          <!-- </div> -->
+        </div>
+      </div>
+    </Section>
+
     <Section theme="light" class="page-section team">
       <!-- <div class="container px-4 px-lg-5"> -->
       <div class="container px-1 px-lg-2">
@@ -70,7 +92,7 @@
         </div> -->
 
         <!-- <div id="exec-team-div" class="row d-flex justify-content-center">
-          <TeamMember v-for="exec in memberss['exec_team']" 
+          <TeamMember v-for="exec in teamList['exec_team']" 
             :img="members[exec['image']]" 
             :name="exec['name']" 
             :role="exec['role']" 
@@ -82,10 +104,10 @@
         <!-- <div class="container px-4 px-lg-5">       -->
         <div class="row d-flex justify-content-center" id="leads-div">
           <!-- Insert subsystems leads -->
-          <TeamSystem v-for="system in memberss['leads']" :img="members[system['image']]" :name="system['name']" :desc="system['description']">
+          <TeamSystem v-for="system in teamList['leads']" :img="teamImages[system['image']]" :name="system['name']" :desc="system['description']">
             <!-- <div class="col-xl-4 col-md-6 "> -->
               <TeamMember v-for="exec in system['leads']" 
-                :img="members[exec['image']]" 
+                :img="teamImages[exec['image']]" 
                 :name="exec['name']" 
                 :role="exec['role']" 
                 :desc="exec['description']" 
@@ -98,10 +120,10 @@
         <!-- <div class="container px-4 px-lg-5"> -->
         <div class="row d-flex justify-content-center" id="subsystems-div">
           <!-- Insert subsystems -->
-          <TeamSystem v-for="system in memberss['subsystems']" :img="members[system['image']]" :name="system['name']" :desc="system['description']">
+          <TeamSystem v-for="system in teamList['subsystems']" :img="teamImages[system['image']]" :name="system['name']" :desc="system['description']">
             <!-- <div class="col-xl-4 col-md-6 "> -->
               <TeamMember v-for="exec in system['leads']" 
-                :img="members[exec['image']]" 
+                :img="teamImages[exec['image']]" 
                 :name="exec['name']" 
                 :role="exec['role']" 
                 :desc="exec['description']" 
@@ -119,10 +141,30 @@
   </div>
 </template>
 
-
+<style scoped>
+.system-info {
+  /* display: flex; */
+  margin: 10px;
+  /* background-color: rebeccapurple; */
+  /* border: 1px dashed; */
+  height: 250px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+.system-info h4 {
+  /* border: 1px dashed; */
+}
+.system-info i {
+  font-size: 40px;
+  /* border: 1px dashed; */
+}
+.system-info p {
+  padding: 10px 10px;
+  /* border: 1px dashed; */
+}
+</style>
 
 <script setup>
-  import { filename } from 'pathe/utils'
+  // import { filename } from 'pathe/utils'
 
   import HeroImg from "@/assets/images/TeamPhoto-2.jpg"
   import Section from "~/components/Section.vue"
@@ -139,7 +181,7 @@
   }
 
 
-  const members = Object.fromEntries(
+  const teamImages = Object.fromEntries(
     // Object.entries(glob).map(([key, value]) => [filename(key), value.default])
     Object.entries(globa).map(([key, value]) => [getFilename(key), value.default])
   )
@@ -166,218 +208,6 @@
   ]
 })
 
-const memberss = {
-"exec_team": [
-  {
-      "name": "Syed Abraham Ahmed",
-      "role": "Co - President",
-      "description": "4th Year Computer Engineering Undergraduate Student",
-      "image": "A.Ahmed.jpg",
-      "socials": {
-          "linkedin": "https://www.linkedin.com/in/syed-abraham-ahmed/",
-          "instagram": "https://www.instagram.com/abragraphs"
-      }
-  },
-  {
-      "name": "Minjeong Kang",
-      "role": "Co - President",
-      "description": "3rd Year Computer Engineering Undergraduate Student",
-      "image": "M.Kang.jpg",
-      "socials": {
-          "linkedin": "https://www.linkedin.com/in/minjeong-kang-96ab431b2/",
-          "instagram": "https://www.instagram.com/unikwinpink"
-      }
-  },
-  {
-      "name": "Nikolaus Reichert",
-      "role": "Vice President",
-      "description": "5th Year Computer Engineering Undergraduate Student",
-      "image": "N.Reichert.jpg",
-      "socials": {
-          "linkedin": "https://www.linkedin.com/in/njreichert/"
-      }
-  },
-  {
-      "name": "Garizaldy Gerra",
-      "role": "Secretary",
-      "description": "5th Year Computer Engineering Undergraduate Student",
-      "image": "G.Gerra.jpg",
-      "socials": {
-          "linkedin": "https://www.linkedin.com/in/garizaldygerra/"
-      }
-  },
-  {
-      "name": "Connor Pagtakhan",
-      "role": "Treasurer & Webmaster",
-      "description": "4th Year Computer Engineering Undergraduate Student",
-      "image": "C.Pagtakhan.jpg",
-      "socials": {
-          "linkedin": "https://www.linkedin.com/in/connor-pagtakhan-5a617b206/",
-          "instagram": "https://www.instagram.com/cpagtakhan/"
-      }
-  },
-  {
-      "name": "Erica von Stackelberg",
-      "role": "Business Director",
-      "description": "5th Year Electrical Engineering Undergraduate Student",
-      "image": "E.Stackelberg.jpg",
-      "socials": {
-          "linkedin": "https://www.linkedin.com/in/ericavonstackelberg/"
-      }
-  },
-  {
-      "name": "Breanna Stratton",
-      "role": "Promotions Director",
-      "description": "5th Year Computer Engineering Undergraduate Student",
-      "image": "B.Stratton.jpg",
-      "socials": {
-          "linkedin": "https://www.linkedin.com/in/breanna-stratton-278b8a1a1/"
-      }
-  }
-],
-"leads":[
-  {
-      "name": "System Lead",
-      "description": "",
-      "image": "subsystem-lead.jpg",
-      "leads": [
-          {
-              "name": "Syed Abraham Ahmed",
-              "role": "System Lead",
-              "description": "4th Year Computer Engineering Undergraduate Student",
-              "image": "A.Ahmed.jpg",
-              "socials": {
-                  "linkedin": "https://www.linkedin.com/in/syed-abraham-ahmed/",
-                  "instagram": "https://www.instagram.com/abragraphs"
-              }
-          }
-      ]
-  }
-],
-"subsystems":[
-  {
-      "name": "Embedded",
-      "description": "Interfacing hardware with software, designing circuit boards, and working on control systems.",
-      "image": "subsystem-embedded.jpg",
-      "leads": [
-          {
-              "name": "Nikolaus Reichert",
-              "role": "Embedded System Lead",
-              "description": "5th Year Computer Engineering Undergraduate Student",
-              "image": "N.Reichert.jpg",
-              "socials": {
-                  "linkedin": "https://www.linkedin.com/in/njreichert/"
-              }
-          }
-      ]
-  },
-  {
-      "name": "Communications",
-      "description": "The link between the robot and its pilot. Responsible for designing systems that keep team members informed of the robot's state and health.",
-      "image": "subsystem-communications.jpg",
-      "leads": [
-          {
-              "name": "Minjeong Kang",
-              "role": "Communications System Co-Lead",
-              "description": "3rd Year Computer Engineering Undergraduate Student",
-              "image": "M.Kang.jpg",
-              "socials": {
-                  "linkedin": "https://www.linkedin.com/in/minjeong-kang-96ab431b2/",
-                  "instagram": "https://www.instagram.com/unikwinpink"
-              }
-          },
-          {
-              "name": "Adam Garofalo",
-              "role": "Communications System Co-Lead",
-              "description": "",
-              "image": "blank-head.jpg",
-              "socials": {
-                  "linkedin": "https://www.linkedin.com/in/adam-garofalo-846105204/"
-              }
-          }
-      ]
-  },
-  {
-      "name": "Electrical",
-      "description": "Design of the system that connects the other subsystems with power, communications, and control.",
-      "image": "subsystem-electrical.jpg",
-      "leads": [
-          {
-              "name": "Erica von Stackelberg",
-              "role": "Electrical System Lead",
-              "description": "5th Year Electrical Engineering Undergraduate Student",
-              "image": "E.Stackelberg.jpg",
-              "socials": {
-                  "linkedin": "https://www.linkedin.com/in/ericavonstackelberg/"
-              }
-          }
-      ]
-  },
-  {
-      "name": "Chassis",
-      "description": "Designs and manufactures the structure the robot is based upon. It has the role of keeping other subsystems safe from damage, moving payloads from point A to point B, and acting as a platform for prototyping and development.",
-      "image": "subsystem-chassis.jpg",
-      "leads": [
-          {
-              "name": "Matthew Nutbean",
-              "role": "Chassis System Lead",
-              "description": "",
-              "image": "M.Nutbean.jpg",
-              "socials": {}
-          }
-      ]
-  },
-  {
-      "name": "Robotic Arm",
-      "description": "Designs the primary payload of the robot. This payload is used as a platform for secondary payloads, and allows the robot to grab, move, and manipulate the world around it.",
-      "image": "subsystem-robotic-arm.jpg",
-      "leads": [
-          {
-              "name": "Graham Nash",
-              "role": "Robotic Arm System Lead",
-              "description": "",
-              "image": "G.Nash.jpg",
-              "socials": {
-                  "linkedin": "https://www.linkedin.com/in/grahamhnash/"
-              }
-          },
-          {
-              "name": "Noah Reeder",
-              "role": "Robotic Arm Software Lead",
-              "description": "",
-              "image": "blank-head.jpg",
-              "socials": {
-                  "linkedin": "https://www.linkedin.com/in/noah-reeder-b09686189/"
-              }
-          }
-      ]
-  },
-  {
-      "name": "Payload",
-      "description": "Designs, experiments with, and automates systems on the robot. It interfaces with the systems peripherals including cameras and sensors.",
-      "image": "subsystem-payload.jpg",
-      "leads": [
-          {
-              "name": "Breanna Stratton",
-              "role": "Payload System Co-Lead",
-              "description": "5th Year Computer Engineering Undergraduate Student",
-              "image": "B.Stratton.jpg",
-              "socials": {
-                  "linkedin": "https://www.linkedin.com/in/breanna-stratton-278b8a1a1/"
-              }
-          },
-          {
-              "name": "Skylar Trudeau",
-              "role": "Payload System Co-Lead",
-              "description": "Computer Engineering Undergraduate Student",
-              "image": "blank-head.jpg",
-              "socials": {
-                  "linkedin": "https://www.linkedin.com/in/skylar-trudeau/"
-              }
-          }
-      ]
-  }
-]
-};
+import teamList from '@/assets/images/members/TeamList.json'
 
 </script>

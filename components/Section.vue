@@ -2,7 +2,7 @@
   <section class="page-section" :style="sectionStyle">
   <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
-      <div class="col-lg-10 text-center">
+      <div class="col-lg-20 text-center">
         <h2 class="mt-0">{{ title }}</h2>
         <!-- <hr class="divider divider-light" /> -->
         <hr v-if="title" class="divider divider-light" />
