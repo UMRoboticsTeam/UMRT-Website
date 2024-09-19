@@ -49,15 +49,21 @@
       </div>
     </Section>
 
-    <Section theme="dark" title="About Subsystems">
+    <!-- <Section theme="dark" title="About Subsystems">
       <p>The University of Manitoba Robotics Team's Subsystems section functions as the diverse nerve center 
         of our robotic initiatives. It's a collection of specialized units, each with its own unique role, 
         working together to support our robot's functionality. Their collective efforts form the foundation 
         upon which our team builds innovative robots, driving our endeavors in robotics competitions and beyond.
       </p>
-    </Section>
+    </Section> -->
 
-    <Section theme="dark" title="About Subsystems">
+    <Section theme="dark" title="About the Subsystems">
+      <p>The University of Manitoba Robotics Team's Subsystems section functions as the diverse nerve center 
+        of our robotic initiatives. It's a collection of specialized units, each with its own unique role, 
+        working together to support our robot's functionality. Their collective efforts form the foundation 
+        upon which our team builds innovative robots, driving our endeavors in robotics competitions and beyond.
+      </p>
+
       <div class="row d-flex justify-content-center">
 
         <div v-for="system in teamList['leads']" class="system-info col-xl-4 col-md-6">

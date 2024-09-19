@@ -4,11 +4,11 @@
       <!-- <div class="py-3"> -->
       <div class="pic">
         <!-- <img src="/assets/img/subsystem-embedded.jpg" class="img-fluid"> -->
-        <img :src="img" class="img-fluid">
+        <!-- <img :src="img" class="img-fluid"> -->
       </div>
       <div class="mt-3">
         <h2 class="name">{{ name }}</h2>
-        <p class="description">{{ desc }}</p>
+        <!-- <p class="description">{{ desc }}</p> -->
       </div>
     </div>
     <slot></slot>

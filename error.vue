@@ -1,5 +1,7 @@
 <template>
-  <div>
+  
+    <Header />
+    
     <Section theme="dark" />
     <Section theme="dark" />
     <Section theme="dark">
@@ -11,5 +13,6 @@
     </Section>
     <Section theme="dark" />
     <Section theme="dark" />
-  </div>
+  
+    <Footer />
 </template>

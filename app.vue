@@ -2,7 +2,7 @@
 
 
 <template>
-  <div>
+  <!-- <div> -->
     <Header />
     
     <!-- Back to top btn -->
@@ -14,7 +14,7 @@
     <NuxtPage />
 
     <Footer />
-  </div>
+  <!-- </div> -->
 </template>
 
 <style scoped>
