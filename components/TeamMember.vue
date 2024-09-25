@@ -22,6 +22,16 @@
   <!-- </div> -->
 </template>
   
+<style scoped>
+.member {
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.35);
+}
+.member:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.35);
+}
+</style>
 
 <!-- <div class="col-xl-4 col-md-6">
   <div class="member d-flex my-2">

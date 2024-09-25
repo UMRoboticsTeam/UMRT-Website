@@ -129,6 +129,10 @@
         </Section>
         
         <Socials />
+
+        <!-- <Section img="aaaa">
+          <p>yo what is poppin</p>
+        </Section> -->
     </div>
 </template>
 

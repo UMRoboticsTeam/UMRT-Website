@@ -155,6 +155,12 @@
   /* border: 1px dashed; */
   height: 250px;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+
+  transition: all 0.3s ease;
+}
+.system-info:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 .system-info h4 {
   /* border: 1px dashed; */
