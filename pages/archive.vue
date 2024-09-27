@@ -1,11 +1,6 @@
 <template>
   <div>
     <Hero title="Archive" :imgSrc="HeroImg"/>
-    <!-- <Section theme="dark">
-      <p>
-        Thank you to our sponsors!   
-      </p>
-    </Section> -->
     <Section theme="dark">
       <h2 class="text-center mt-0">2023-2024</h2>
       <hr class="divider" />
@@ -38,6 +33,17 @@
             <tr><td>Payload Leads</td><td>Breanna Stratton, Skylar Trudeau</td></tr>
           </tbody>
         </table>
+
+        
+      </div>
+      <div class="members-list">
+        <h4>Members</h4>
+        <div class="list">
+          Syed Abraham Ahmed, Minjeong Kang, Connor Pagtakhan, Garizaldy Gerra, Nikolaus Reichert, 
+          Erica von Stackelberg, Breanna Stratton, Skylar Trudeau, Kevin Burston, Adam Garofalo, Ali Syed Ahmed, 
+          Matthew Nutbean, Graham Nash, Noah Reeder, Edcel Abanto, Ghrum Yemessghen, Anna Kulchycki,
+          Kate Lacerna, Spencer Molloy, Jonah St. Hilaire
+        </div>
       </div>
     </Section>
   </div>
@@ -61,6 +67,26 @@ tr {
 }
 td {
   padding: 1px 10px;
+}
+.members-list {
+  margin: 20px 5px;
+  justify-content: center;
+  text-align: center;
+}
+.members-list .list {
+  width: 80%;
+  margin: auto;
+  /* justify-content: space-evenly; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* text-justify: newspaper; */
+
+
+
+
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: center;
 }
 </style>
   

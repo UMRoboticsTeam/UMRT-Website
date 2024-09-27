@@ -4,28 +4,45 @@
     <hr class="divider divider-light" />
 
     <div class="row row-cols-1 row-cols-lg-2 d-flex justify-content-center">
-      <!-- High Tier Sponsors -->
+      <!-- =================================== -->
+      <!-- ====== High Tier Sponsors ========= -->
+      <!-- =================================== -->
+
+      <!-- Engineering Endowment Fund -->
       <Sponsor :imgSrc="LOGO_EEF"></Sponsor>
+      <!-- PTX Trimble -->
       <Sponsor :imgSrc="LOGO_PTX" href="https://www.ptxtrimble.com/" tooltip="PTX Trimble Website"></Sponsor>
+      <!-- G3 -->
       <Sponsor :imgSrc="LOGO_G3" href="https://www.g3.ca/" tooltip="G3 Website"></Sponsor>
+      <!-- MacDon -->
       <Sponsor :imgSrc="LOGO_MD" href="https://www.macdon.com/" tooltip="MacDon Website"></Sponsor>
 
     </div>
     <hr class="divider divider-light" />
     <div class="row row-cols-2 row-cols-lg-4 d-flex justify-content-center">
-      <!-- Medium Tier Sponsors -->
+      <!-- =================================== -->
+      <!-- ======== Medium Tier Sponsors ===== -->
+      <!-- =================================== -->
+
+      <!-- Seven Oaks School Division -->
       <Sponsor :imgSrc="LOGO_7O"></Sponsor>
+      <!-- New Flyer Industries -->
       <Sponsor :imgSrc="LOGO_NFI"></Sponsor>
-      <!-- <Sponsor :imgSrc="LOGO_SW"></Sponsor> -->
-      <!-- <Sponsor :imgSrc="LOGO_AL"></Sponsor> -->
+      <!-- Outstanding Branding -->
       <Sponsor :imgSrc="LOGO_OB"></Sponsor>
+      <!-- Radio Amateurs Manitoba -->
       <Sponsor :imgSrc="LOGO_RAM" href="https://ramb.ca/" tooltip="Radio Amateurs of Manitoba Website"></Sponsor>
       
     </div>
     <hr class="divider divider-light" />
     <div class="row row-cols-3 row-cols-lg-6 d-flex justify-content-center">
-      <!-- Low Tier Sponsors -->
+      <!-- =================================== -->
+      <!-- ======= Low Tier Sponsors ========= -->
+      <!-- =================================== -->
+
+      <!-- Solidworks -->
       <Sponsor :imgSrc="LOGO_SW"></Sponsor>
+      <!-- Altium -->
       <Sponsor :imgSrc="LOGO_AL"></Sponsor>
       
     </div>

@@ -22,7 +22,7 @@
             The University of Manitoba Robotics Team competes in the Canadian International Rover Competition (CIRC) held annually in Drumheller, AB, Canada.
           </p>
           <p>Check out more information!</p>
-          <a class="btn btn-light btn-xl" href="/competitions/">Competitions</a>
+          <a class="btn btn-light btn-xl" href="/competitions">Competitions</a>
         </Section>
         <!-- <Section theme="light" title="Section TWO">SECOND SECTION!</Section> -->
         <Sponsors />

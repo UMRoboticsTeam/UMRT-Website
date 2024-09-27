@@ -11072,6 +11072,7 @@ header.masthead h1, header.masthead .h1 {
 }
 .team .subsystem h2{
   text-align: center;
+  padding-bottom: 10px;
 }
 
 /* .team .member .pic { */
@@ -11083,6 +11084,7 @@ header.masthead h1, header.masthead .h1 {
   max-height: 120px;
   /* width: 20px; */
   /* border-radius: 50%; */
+  /* aspect-ratio: 1; */
   
 }
 /* .team .member .pic img { */
@@ -11094,18 +11096,19 @@ header.masthead h1, header.masthead .h1 {
   /* min-width: 120px; */
   border-radius: 7px;
   object-fit: cover;
+  aspect-ratio: 1;
 }
 
 .team .subsystem .pic {
-  overflow: hidden;
+  /* overflow: hidden; */
   /* width: 120px; */
   /* width: 50%; */
-  max-height: 80px;
-  border-radius: 5px;
+  /* max-height: 80px; */
+  /* border-radius: 5px; */
 }
 .team .subsystem .pic img {
-  min-width: 120px;
-  object-fit: cover;
+  /* min-width: 120px; */
+  /* object-fit: cover; */
 }
 
 /* .team .member .pic img {

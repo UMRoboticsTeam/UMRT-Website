@@ -1,19 +1,9 @@
 {
   "exec_team":[
     {
-      "name":"Syed Abraham Ahmed",
-      "role":"Co - President",
-      "description":"4th Year Computer Engineering Undergraduate Student",
-      "image":"A.Ahmed.jpg",
-      "socials":{
-        "linkedin":"https://www.linkedin.com/in/syed-abraham-ahmed/",
-        "instagram":"https://www.instagram.com/abragraphs"
-      }
-    },
-    {
       "name":"Minjeong Kang",
-      "role":"Co - President",
-      "description":"3rd Year Computer Engineering Undergraduate Student",
+      "role":"President",
+      "description":"4th Year Computer Engineering Undergraduate Student",
       "image":"M.Kang.jpg",
       "socials":{
         "linkedin":"https://www.linkedin.com/in/minjeong-kang-96ab431b2/",
@@ -21,27 +11,28 @@
       }
     },
     {
-      "name":"Nikolaus Reichert",
+      "name":"Kevin Burston",
       "role":"Vice President",
-      "description":"5th Year Computer Engineering Undergraduate Student",
-      "image":"N.Reichert.jpg",
+      "description":"2nd Year Computer Science Undergraduate Student",
+      "image":"M.Kang.jpg",
       "socials":{
-        "linkedin":"https://www.linkedin.com/in/njreichert/"
+        "linkedin":"https://www.linkedin.com/in/minjeong-kang-96ab431b2/",
+        "instagram":"https://www.instagram.com/unikwinpink"
       }
     },
     {
-      "name":"Garizaldy Gerra",
+      "name":"Gabriel Young",
       "role":"Secretary",
-      "description":"5th Year Computer Engineering Undergraduate Student",
-      "image":"G.Gerra.jpg",
+      "description":"",
+      "image":"blank-head.jpg",
       "socials":{
-        "linkedin":"https://www.linkedin.com/in/garizaldygerra/"
+        
       }
     },
     {
       "name":"Connor Pagtakhan",
-      "role":"Treasurer & Webmaster",
-      "description":"4th Year Computer Engineering Undergraduate Student",
+      "role":"Treasurer",
+      "description":"5th Year Computer Engineering Undergraduate Student",
       "image":"C.Pagtakhan.jpg",
       "socials":{
         "linkedin":"https://www.linkedin.com/in/connor-pagtakhan-5a617b206/",
@@ -49,28 +40,37 @@
       }
     },
     {
-      "name":"Erica von Stackelberg",
-      "role":"Business Director",
-      "description":"5th Year Electrical Engineering Undergraduate Student",
-      "image":"E.Stackelberg.jpg",
+      "name":"Praise Oluwawande",
+      "role":"Sponsorships Director",
+      "description":"4th Year Mechanical Engineering Undergraduate Student",
+      "image":"blank-head.jpg",
       "socials":{
-        "linkedin":"https://www.linkedin.com/in/ericavonstackelberg/"
+
       }
     },
     {
-      "name":"Breanna Stratton",
-      "role":"Promotions Director",
-      "description":"5th Year Computer Engineering Undergraduate Student",
-      "image":"B.Stratton.jpg",
+      "name":"Kate Lacerna",
+      "role":"Events Director",
+      "description":"",
+      "image":"blank-head.jpg",
       "socials":{
-        "linkedin":"https://www.linkedin.com/in/breanna-stratton-278b8a1a1/"
+
+      }
+    },
+    {
+      "name":"Sydney Povey",
+      "role":"Creatives Director",
+      "description":"2nd Year Computer Engineering Undergraduate Student",
+      "image":"blank-head.jpg",
+      "socials":{
+        
       }
     }
   ],
   "leads":[
     {
       "name":"System Lead",
-      "description":"The System Lead is responsible for the progress of the system as a whole, managing requirements and all sections.",
+      "description":"The System Lead plans",
       "image":"subsystem-lead.jpg",
       "icon":"pencil-square",
       "leads":[
@@ -112,15 +112,6 @@
       "icon":"broadcast-pin",
       "leads":[
         {
-          "name":"Kevin Burston",
-          "role":"Communications System Co-Lead",
-          "description":"",
-          "image":"blank-head.jpg",
-          "socials":{
-            
-          }
-        },
-        {
           "name":"Minjeong Kang",
           "role":"Communications System Co-Lead",
           "description":"3rd Year Computer Engineering Undergraduate Student",
@@ -128,6 +119,15 @@
           "socials":{
             "linkedin":"https://www.linkedin.com/in/minjeong-kang-96ab431b2/",
             "instagram":"https://www.instagram.com/unikwinpink"
+          }
+        },
+        {
+          "name":"Adam Garofalo",
+          "role":"Communications System Co-Lead",
+          "description":"",
+          "image":"blank-head.jpg",
+          "socials":{
+            "linkedin":"https://www.linkedin.com/in/adam-garofalo-846105204/"
           }
         }
       ]

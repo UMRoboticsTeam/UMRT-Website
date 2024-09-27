@@ -142,7 +142,16 @@
 
       </div>
     </Section>
-
+    <Section theme="primary" title="Past Teams">
+      <p>
+        The success of the team wouldn't be possible without the 
+        dedication and groundwork laid by past teams who built 
+        the foundation we continue to grow upon.
+        <br><br>
+       View our past teams here! 
+      </p>
+      <a class="btn btn-light btn-xl" href="/archive">Archive</a>
+    </Section>
     
   </div>
 </template>
