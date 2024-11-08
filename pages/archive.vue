@@ -42,7 +42,8 @@
           Syed Abraham Ahmed, Minjeong Kang, Connor Pagtakhan, Garizaldy Gerra, Nikolaus Reichert, 
           Erica von Stackelberg, Breanna Stratton, Skylar Trudeau, Kevin Burston, Adam Garofalo, Ali Syed Ahmed, 
           Matthew Nutbean, Graham Nash, Noah Reeder, Edcel Abanto, Ghrum Yemessghen, Anna Kulchycki,
-          Kate Lacerna, Spencer Molloy, Jonah St. Hilaire
+          Kate Lacerna, Spencer Molloy, Jonah St. Hilaire, Bryce Cadieux, Alessandro Potenza, Spencer Ryznar,
+          Daigh Burgess, Kyra Natividad, Ankit Kaur
         </div>
       </div>
     </Section>

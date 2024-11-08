@@ -28,7 +28,7 @@
           <tr>
             <th scope="col">Date</th>
             <th scope="col">Competition</th>
-            <th scope="col">Place</th>
+            <!-- <th scope="col">Place</th> -->
           </tr>
         </thead>
         <tbody>
@@ -36,13 +36,13 @@
             <th scope="row">August 9-12, 2024</th>
             <!-- <td>Canadian International Rover Competition</td> -->
             <td><a href="https://circ.cstag.ca/2024/results/">Canadian International Rover Competition 2024</a></td>
-            <td>11th</td>
+            <!-- <td>11th</td> -->
           </tr>
           <tr>
             <th scope="row">August 8-11, 2025</th>
             <!-- <td>Canadian International Rover Competition</td> -->
             <td><a href="https://circ.cstag.ca/2025/">Canadian International Rover Competition 2025</a></td>
-            <td>...</td>
+            <!-- <td>...</td> -->
           </tr>
         </tbody>
       </table>
