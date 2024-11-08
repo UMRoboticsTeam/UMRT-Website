@@ -20,7 +20,13 @@
     </url>
     <!-- Sponsorships -->
     <url>
-        <loc>https://umrt.ca/competitions/</loc>
+        <loc>https://umrt.ca/sponsorships/</loc>
+        <lastmod>2024-09-15T00:00:00+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <!-- Archive -->
+    <url>
+        <loc>https://umrt.ca/archive/</loc>
         <lastmod>2024-09-15T00:00:00+00:00</lastmod>
         <priority>0.80</priority>
     </url>
