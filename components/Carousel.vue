@@ -10,7 +10,7 @@
     
     <!-- <a v-for="path in Object.keys(glob)" :key="path" class="h-full" href="" target="."> -->
     <a v-for="path in Object.keys(glob)" :key="path" class="h-full">
-      <img :src="images[path]" class="h-full" alt="">
+      <img :src="images[path]" class="h-full" alt="" />
     </a>
 
   </div>

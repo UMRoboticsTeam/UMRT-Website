@@ -3,9 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
 
+  modules: ['@nuxt/image'],
+
   css: [
     './assets/styles.css'
-],  // imports in here so that it doesnt blink when refreshing
+  ],  // imports in here so that it doesnt blink when refreshing
   // script: [
   //   { hid: "Bootstrap", src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', defer=true},
   //   { hid: "SimpleLightbox", src: 'https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js', defer=true},

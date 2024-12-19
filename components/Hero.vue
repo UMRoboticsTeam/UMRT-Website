@@ -2,7 +2,7 @@
   <!-- <div class="masthead" :style="background: linear-gradient(to bottom, rgba(5, 34, 91, 0.7) 0%, rgba(5, 34, 91, 0.85) 100%), URL(bgImgUrl)"> -->
   <div class="masthead" :style="heroStyle">
     <div class="container px-4 px-lg-5 h-80">
-      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center" loading="lazy">
 
         <!-- MOVE WITH SCROLL -->
 
