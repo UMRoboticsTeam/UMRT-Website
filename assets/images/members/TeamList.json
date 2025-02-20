@@ -4,7 +4,7 @@
       "name":"Minjeong Kang",
       "role":"President",
       "description":"4th Year Computer Engineering Undergraduate Student",
-      "image":"M.Kang.jpg",
+      "image":"M.Kang_750.jpg",
       "socials":{
         "linkedin":"https://www.linkedin.com/in/minjeong-kang-96ab431b2/",
         "instagram":"https://www.instagram.com/unikwinpink"
@@ -14,17 +14,16 @@
       "name":"Kevin Burston",
       "role":"Vice President",
       "description":"2nd Year Computer Science Undergraduate Student",
-      "image":"blank-head.jpg",
+      "image":"K.Burston_750.jpg",
       "socials":{
-        "linkedin":"https://www.linkedin.com/in/minjeong-kang-96ab431b2/",
-        "instagram":"https://www.instagram.com/unikwinpink"
+
       }
     },
     {
       "name":"Mai Bui",
       "role":"Secretary",
       "description":"",
-      "image":"blank-head.jpg",
+      "image":"M.Bui_750.jpg",
       "socials":{
         
       }
@@ -33,7 +32,7 @@
       "name":"Connor Pagtakhan",
       "role":"Treasurer",
       "description":"5th Year Computer Engineering Undergraduate Student",
-      "image":"C.Pagtakhan2.jpg",
+      "image":"C.Pagtakhan.jpg",
       "socials":{
         "linkedin":"https://www.linkedin.com/in/connor-pagtakhan-5a617b206/",
         "instagram":"https://www.instagram.com/cpagtakhan/"
@@ -52,7 +51,7 @@
       "name":"Kate Lacerna",
       "role":"Events Director",
       "description":"",
-      "image":"blank-head.jpg",
+      "image":"K.Lacerna_750.jpg",
       "socials":{
 
       }
@@ -61,7 +60,7 @@
       "name":"Sydney Povey",
       "role":"Creatives Director",
       "description":"2nd Year Computer Engineering Undergraduate Student",
-      "image":"blank-head.jpg",
+      "image":"S.Povey_750.jpg",
       "socials":{
         
       }
@@ -70,7 +69,7 @@
       "name":"Edcel Abanto",
       "role":"Team Lead",
       "description":"",
-      "image":"blank-head.jpg",
+      "image":"E.Abanto_750.jpg",
       "socials":{
         
       }
@@ -79,7 +78,7 @@
   "leads":[
     {
       "name":"System Lead",
-      "description":"The System Lead plans",
+      "description":"The System Lead is responsible for overseeing the integration and management of all subsystems. They ensure that each subsystem functions correctly on its own and integrates properly with the others to form a complete cohesive system.",
       "image":"subsystem-lead.jpg",
       "icon":"pencil-square",
       "leads":[
@@ -87,7 +86,7 @@
           "name":"Edcel Abanto",
           "role":"Team Lead",
           "description":"",
-          "image":"blank-head.jpg",
+          "image":"E.Abanto_750.jpg",
           "socials":{
             
           }
@@ -103,13 +102,21 @@
       "icon":"cpu",
       "leads":[
         {
-          "name":"Syed Abraham Ahmed",
-          "role":"Embedded Lead",
-          "description":"5th Year Computer Engineering Undergraduate Student",
-          "image":"A.Ahmed.jpg",
+          "name":"Niko Christie",
+          "role":"Embedded Co-Lead",
+          "description":"",
+          "image":"blank-head.jpg",
           "socials":{
-            "linkedin":"https://www.linkedin.com/in/syed-abraham-ahmed/",
-            "instagram":"https://www.instagram.com/abragraphs"
+            
+          }
+        },
+        {
+          "name":"Ernest Gonzales",
+          "role":"Embedded Co-Lead",
+          "description":"",
+          "image":"blank-head.jpg",
+          "socials":{
+            
           }
         }
       ]
@@ -124,7 +131,7 @@
           "name":"Kevin Burston",
           "role":"Comm-Ops Co-Lead",
           "description":"3rd Year Computer Science Undergraduate Student",
-          "image":"blank-head.jpg",
+          "image":"K.Burston_750.jpg",
           "socials":{
             
           }
@@ -133,7 +140,7 @@
           "name":"Connor Pagtakhan",
           "role":"Comm-Ops Co-Lead",
           "description":"",
-          "image":"C.Pagtakhan2.jpg",
+          "image":"C.Pagtakhan.jpg",
           "socials":{
             "linkedin":"https://www.linkedin.com/in/connor-pagtakhan-5a617b206/",
             "instagram":"https://www.instagram.com/cpagtakhan/"
@@ -151,7 +158,7 @@
           "name":"Jonah St. Hilaire",
           "role":"Electrical Lead",
           "description":"",
-          "image":"blank-head.jpg",
+          "image":"J.StHilaire_750.jpg",
           "socials":{
             
           }
@@ -168,7 +175,7 @@
           "name":"Matthew Nutbean",
           "role":"Chassis System Lead",
           "description":"",
-          "image":"M.Nutbean.jpg",
+          "image":"M.Nutbean_750.jpg",
           "socials":{
             "linkedin": "https://www.linkedin.com/in/matthew-nutbean-6bb479306/"
           }
@@ -185,7 +192,7 @@
           "name":"Anna Kulchycki",
           "role":"Robotic Arm System Lead",
           "description":"",
-          "image":"blank-head.jpg",
+          "image":"A.Kulchycki_750.jpg",
           "socials":{
             
           }
@@ -194,7 +201,7 @@
           "name":"Noah Reeder",
           "role":"Robotic Arm Software Lead",
           "description":"",
-          "image":"blank-head.jpg",
+          "image":"N.Reeder_750.jpg",
           "socials":{
             "linkedin":"https://www.linkedin.com/in/noah-reeder-b09686189/"
           }
@@ -211,7 +218,7 @@
           "name":"Spencer Molly",
           "role":"Mission Control Lead",
           "description":"",
-          "image":"blank-head.jpg",
+          "image":"S.Molly_750.jpg",
           "socials":{
             
           }

@@ -11081,7 +11081,8 @@ header.masthead h1, header.masthead .h1 {
   /* width: 120px; */
   /* width: 50%; */
   max-width: 120px;
-  max-height: 120px;
+  /* max-height: 120px; */
+  max-height: 160px;
   /* width: 20px; */
   /* border-radius: 50%; */
   /* aspect-ratio: 1; */
@@ -11096,7 +11097,8 @@ header.masthead h1, header.masthead .h1 {
   /* min-width: 120px; */
   border-radius: 7px;
   object-fit: cover;
-  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
+  aspect-ratio: 2 / 3;
 }
 
 .team .subsystem .pic {
