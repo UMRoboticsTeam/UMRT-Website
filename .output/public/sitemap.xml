@@ -10,7 +10,7 @@
     <url>
         <loc>https://umrt.ca/team/</loc>
         <lastmod>2024-09-15T00:00:00+00:00</lastmod>
-        <priority>0.80</priority>
+        <priority>0.90</priority>
     </url>
     <!-- Competitions -->
     <url>
@@ -22,7 +22,7 @@
     <url>
         <loc>https://umrt.ca/sponsorships/</loc>
         <lastmod>2024-09-15T00:00:00+00:00</lastmod>
-        <priority>0.80</priority>
+        <priority>0.90</priority>
     </url>
     <!-- Archive -->
     <url>
@@ -30,4 +30,10 @@
         <lastmod>2024-09-15T00:00:00+00:00</lastmod>
         <priority>0.80</priority>
     </url>
+    <!-- Outreach -->
+    <!-- <url>
+        <loc>https://umrt.ca/outreach/</loc>
+        <lastmod>2024-09-15T00:00:00+00:00</lastmod>
+        <priority>0.90</priority>
+    </url> -->
 </urlset>

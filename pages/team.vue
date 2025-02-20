@@ -36,7 +36,7 @@
         </div> -->
 
         <div id="exec-team-div" class="row d-flex justify-content-center">
-          <div class="col-xl-4 col-md-6 " v-for="exec in teamList['exec_team']" >
+          <div class="col-xl-6 col-md-8 " v-for="exec in teamList['exec_team']" >
           <TeamMember 
             :img="teamImages[exec['image']]" 
             :name="exec['name']" 
