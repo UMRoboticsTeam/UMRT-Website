@@ -3,7 +3,7 @@
     {
       "name":"Minjeong Kang",
       "role":"President",
-      "description":"4th Year Computer Engineering Undergraduate Student",
+      "description":"",
       "image":"M.Kang_750.jpg",
       "socials":{
         "linkedin":"https://www.linkedin.com/in/minjeong-kang-96ab431b2/",
@@ -13,7 +13,7 @@
     {
       "name":"Kevin Burston",
       "role":"Vice President",
-      "description":"2nd Year Computer Science Undergraduate Student",
+      "description":"",
       "image":"K.Burston_750.jpg",
       "socials":{
 
@@ -31,7 +31,7 @@
     {
       "name":"Connor Pagtakhan",
       "role":"Treasurer",
-      "description":"5th Year Computer Engineering Undergraduate Student",
+      "description":"",
       "image":"C.Pagtakhan.jpg",
       "socials":{
         "linkedin":"https://www.linkedin.com/in/connor-pagtakhan-5a617b206/",
@@ -59,7 +59,7 @@
     {
       "name":"Sydney Povey",
       "role":"Creatives Director",
-      "description":"2nd Year Computer Engineering Undergraduate Student",
+      "description":"",
       "image":"S.Povey_750.jpg",
       "socials":{
         
@@ -71,7 +71,7 @@
       "description":"",
       "image":"E.Abanto_750.jpg",
       "socials":{
-        
+        "linkedin":"https://www.linkedin.com/in/edcel-abanto-88695b2a8/"
       }
     }
   ],
@@ -88,7 +88,7 @@
           "description":"",
           "image":"E.Abanto_750.jpg",
           "socials":{
-            
+            "linkedin":"https://www.linkedin.com/in/edcel-abanto-88695b2a8/"
           }
         }
       ]
@@ -107,7 +107,7 @@
           "description":"",
           "image":"blank-head.jpg",
           "socials":{
-            
+            "linkedin":"https://www.linkedin.com/in/nikolaas-christie-3310452a3/"
           }
         },
         {
@@ -116,7 +116,7 @@
           "description":"",
           "image":"blank-head.jpg",
           "socials":{
-            
+            "linkedin":"https://www.linkedin.com/in/ernest-reign-gonzales-1807a318b/"
           }
         }
       ]
@@ -130,7 +130,7 @@
         {
           "name":"Kevin Burston",
           "role":"Comm-Ops Co-Lead",
-          "description":"3rd Year Computer Science Undergraduate Student",
+          "description":"",
           "image":"K.Burston_750.jpg",
           "socials":{
             
@@ -194,7 +194,7 @@
           "description":"",
           "image":"A.Kulchycki_750.jpg",
           "socials":{
-            
+            "linkedin":"https://www.linkedin.com/in/anna-kulchycki-448125225/"
           }
         },
         {
