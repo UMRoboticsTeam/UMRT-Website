@@ -10,6 +10,8 @@
 
       <!-- Engineering Endowment Fund -->
       <Sponsor :imgSrc="LOGO_EEF"></Sponsor>
+      <!-- Friends of Engineering -->
+      <Sponsor :imgSrc="LOGO_FOE"></Sponsor>
       <!-- PTX Trimble -->
       <Sponsor :imgSrc="LOGO_PTX" href="https://www.ptxtrimble.com/" tooltip="PTX Trimble Website"></Sponsor>
       <!-- G3 -->
@@ -40,6 +42,8 @@
       <!-- ======= Low Tier Sponsors ========= -->
       <!-- =================================== -->
 
+      <!-- OnShape -->
+      <Sponsor :imgSrc="LOGO_OS"></Sponsor>
       <!-- Solidworks -->
       <Sponsor :imgSrc="LOGO_SW"></Sponsor>
       <!-- Altium -->
@@ -55,9 +59,10 @@
   import Section from "~/components/Section.vue"
   import Sponsor from "~/components/Sponsor.vue"
   
-  import img1 from "@/assets/images/sponsors/MacDon_RGB.svg"
+  
 
 import LOGO_EEF from "@/assets/images/sponsors/EngineeringEndowmentFundColour.png"
+import LOGO_FOE from "@/assets/images/sponsors/FOE_logo_cropped.png"
 import LOGO_PTX from "@/assets/images/sponsors/PTx_Trim_RGB.svg"
 import LOGO_G3 from "@/assets/images/sponsors/G3_Symbol_Colour.svg"
 import LOGO_MD from "@/assets/images/sponsors/MacDon_RGB.svg"
@@ -69,5 +74,11 @@ import LOGO_AL from "@/assets/images/sponsors/Altium_Logo_BLK.svg"
 import LOGO_OB from "@/assets/images/sponsors/Outstanding+Branding+Primary+Horizontal.png"
 import LOGO_RAM from "@/assets/images/sponsors/RAM_LOGO_v3_Transparent.png"
 
+import LOGO_OS from "@/assets/images/sponsors/onshape-logo-RGB_color_cropped.png"
+
 
 </script>
+
+<style scoped>
+
+</style>
