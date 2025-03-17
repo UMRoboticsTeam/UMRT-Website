@@ -1,0 +1,4 @@
+const Carousel_vue_vue_type_style_index_0_scoped_a27faf6e_lang = ".carousel[data-v-a27faf6e]{box-shadow:0 4px 20px 0 #000;display:flex;height:300px;padding:0}.carousel-ctrl[data-v-a27faf6e]{height:100%;pointer-events:none;position:absolute;width:100%}.carousel-btn[data-v-a27faf6e]{align-items:center;background-color:#00000080;cursor:pointer;display:flex;height:100%;justify-content:center;padding:0 2px;pointer-events:all}#lightgallery[data-v-a27faf6e]{display:flex;height:100%;overflow-x:scroll;overflow-y:hidden;-ms-overflow-style:none;background-color:#ff000000;padding:0;scroll-behavior:smooth;scrollbar-width:none}#lightgallery[data-v-a27faf6e]::-webkit-scrollbar{display:none}.h-full[data-v-a27faf6e]{height:100%;padding:0 2px}";
+
+export { Carousel_vue_vue_type_style_index_0_scoped_a27faf6e_lang as C };
+//# sourceMappingURL=Carousel-styles-1.mjs-BHnIaBft.mjs.map
