@@ -1,6 +1,7 @@
 # UMRT Official Website
 
-Welcome to the official website of the University of Manitoba Robotics Team (UMRT), hosted on GitHub Pages. The site is built using Vue and the Nuxt framework.
+![alt text](doc/site_preview.png)
+The official website of the University of Manitoba Robotics Team (UMRT), hosted on GitHub Pages. The site is built using Vue and the Nuxt framework.
 
 Check out our website at [umrt.ca](https://umrt.ca)!
 
@@ -14,10 +15,9 @@ npm run dev
 
 This will host a live preview at http://localhost:5500.
 
-Once modifications are complete, generate the static HTML files for GitHub Pages by running:
 
-```bash
-npm run generate
-```
-
-After pushing your changes to the main branch, the workflow will automatically extract the contents from ```/.output/public``` into the ```gh-pages``` branch, reflecting the changes under the official domain.
+## Github Pages Deployment
+After pushing your changes to the main branch, the GitHub Actions workflow will automatically:
+1. Generates static site files into ./.output/public
+2. Uploads the output as an artifact
+3. Deploys the artifact to GitHub Pages
