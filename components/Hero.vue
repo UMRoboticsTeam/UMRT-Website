@@ -38,13 +38,15 @@
             <img src="/assets/images/umrt-logo-transparent.png" class="img-fluid" style="max-height: 50vh;" alt="">
           </div>
           <div v-if="showLogo == 'true'" class="col-lg-8 align-self-baseline">
-            <h1 class="text-white font-weight-bold">{{  title  }}</h1>
+            <!-- <h1 class="text-white font-weight-bold">{{  title  }}</h1> -->
+            <h1 class="text-white" style="font-size: 3vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">{{ title }}</h1>
             <slot></slot>
           </div>
         
         <!-- Only Title -->
         <div v-if="showLogo != 'true'">
-          <h1 class="text-white font-weight-bold">{{  title  }}</h1>
+          <!-- <h1 class="text-white font-weight-bold">{{  title  }}</h1> -->
+          <h1 class="text-white" style="font-size: 3vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">{{ title }}</h1>
           <slot></slot>
         </div>
 
@@ -75,6 +77,13 @@ const heroStyle = computed(() => ({
     rgba(52, 58, 69, 0.9) 95%,
     rgba(52, 58, 69, 1) 100%
     ), url(${props.imgSrc})`,
+  // background: `linear-gradient(to bottom, 
+  //   rgba(99, 109, 128, 0.8) 0%, 
+  //   rgba(52, 58, 69, 0.92) 40%,
+  //   rgba(52, 58, 69, 0.92) 80%,
+  //   rgba(52, 58, 69, 1) 100%
+  //   ), url(${props.imgSrc})`,
+
   // background: `url(${props.src})`,
   // backgroundPosition: 'center',
   backgroundPosition: props.backgroundPosition,

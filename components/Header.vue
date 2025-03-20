@@ -1,32 +1,20 @@
 <template>
   <header>
-    <!-- yo
-    <h1> HEADER SECTION </h1>
-    ---[
-    <nuxt-link to="/">/</nuxt-link>
-    ]---[
-    <nuxt-link to="/about">/about</nuxt-link>
-    ]---[
-    <nuxt-link to="/team">/team</nuxt-link>
-    ]---[
-    <nuxt-link to="/competitions">/competition</nuxt-link>
-    ]---[
-    <nuxt-link to="/sponsorships">/sponsorships</nuxt-link>
-    ]--- -->
-
 
     <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-shrink" id="mainNav"> -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 navbar-shrink" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
       <div class="container px-4 px-lg-2">
-        <!-- <img :src="UMRTLogo" class="" style="height: 32px; padding: 0; margin: 0;"> -->
+
+        <!-- <img :src="UMRTLogo" class="" style="height: 64px; padding: 0; margin: 0;"> -->
         <!-- <a class="navbar-brand" href="/">UofM Robotics Team</a> -->
-        <a class="navbar-brand" href="/">UMRT</a>
+        <!-- <a class="navbar-brand" href="/">UMRT</a> -->
+        <a class="navbar-brand" href="/"><img :src="UMRTLogo" class="" style="height: 64px; padding: 0; margin: 0;"></a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="/team/">The Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="/team">The Team</a></li>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link" href="/team/" aria-expanded="false">The Team</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -34,8 +22,8 @@
                 <a class="dropdown-item" href="/team/#archive">Past Teams</a>
               </div>
             </li> -->
-            <li class="nav-item"><a class="nav-link" href="/competitions/">Competitions</a></li>
-            <li class="nav-item"><a class="nav-link" href="/sponsorships/">Sponsorships</a></li>
+            <li class="nav-item"><a class="nav-link" href="/competitions">Competitions</a></li>
+            <li class="nav-item"><a class="nav-link" href="/sponsorships">Sponsorships</a></li>
             <li class="nav-item"><a class="nav-link" href="/#join">Join Us!</a></li>
             
           </ul>
@@ -49,7 +37,8 @@
 </script>
 
 <script setup>
-// import UMRTLogo from "@/assets/images/umrt-logo-transparent.png"
+import UMRTLogo from "@/assets/images/umrt-logo-transparent.png"
+import HeroImg from '@/assets/images/TeamPhoto-1.jpg'
 
 onMounted(() => {
   document.addEventListener('scroll', () => {
@@ -95,6 +84,9 @@ html:is([data-scroll='1']) nav {
   box-shadow: 0 0 15px 0px #000000FF;
 }
 
+.navbar {
+  padding: 2px;
+}
 
 .navbar-collapse .show {
   background-color: #24252990;
@@ -149,4 +141,63 @@ html:is([data-scroll='1']) .dropdown .dropdown-menu {
 .dropdown-item:hover {
   color: #ffffffBF;
 }
+
+
+
+
+.nav-item {
+  padding: 5px
+}
+
+/* .nav-link:hover, .nav-link:focus {
+  color: #00f;
+} */
+
+
+.nav-item .nav-link {
+  /* color: #ffffff; */
+  /* font-size: 20px; */
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  position: relative;
+  transition: color 0.5s ease;
+}
+
+.nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #fff2 10%, #ffff, #fff2 90%);
+  background-size: 200% 100%;
+  opacity: 0;
+  transition: opacity 0.6s;
+  animation: shimmer 2s linear infinite;
+}
+
+.nav-item .nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-item .nav-link:hover::after {
+  opacity: 1;
+  
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  /* 50% {
+    background-position: 200% 0;
+  } */
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
 </style>

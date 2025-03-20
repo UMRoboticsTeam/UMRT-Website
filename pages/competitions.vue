@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero title="Competitions" :imgSrc="HeroImg"/>
-    <Section theme="dark">
+    <Section theme="light">
       <p>
         The University of Manitoba Robotics Team currently competes in the Canadian International Rover Challenge
         held in Drumheller, AB.
@@ -19,6 +19,13 @@
         </p>
       </blockquote>
     </Section>
+
+    <Section theme="dark">
+      <div class="pano-div">
+        <img :src="circPano">
+      </div>
+    </Section>
+
     <Section theme="light" title="Competition History">
       <!-- <ol>
         <li>>August 2024 - <a href="https://circ.cstag.ca/2024/results/">CIRC 2024</a> - 11th Place</li>
@@ -55,6 +62,8 @@
   import HeroImg from "@/assets/images/CIRC-2024.jpg"
   import Section from "~/components/Section.vue"
   import CIRCLogo from "@/assets/images/CIRC_banner.png"
+
+  import circPano from "@/assets/images/circ-pano.jpg"
 
 useHead({
   title: "Competitions",
@@ -93,5 +102,27 @@ useHead({
   /* text-align: start; */
   font-style: italic;
   color: #707070;
+}
+
+
+.pano-div {
+  overflow: hidden;
+}
+.pano-div img {
+  height: 60vh;
+
+  /* position: fixed; */
+  animation: slide 0.1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -4s);
+
+  /* animation-iteration-count: 1;
+  animation-fill-mode: both; */
+}
+
+@keyframes slide {
+  to {
+    transform: translate(-100%);
+  }
 }
 </style>

@@ -3,9 +3,14 @@
         <!-- <NuxtWelcome /> -->
         <!-- <Hero title="University of Manitoba Robotics Team" :bgImgUrl=bgImg showLogo="true" /> -->
         <!-- <Hero title="University of Manitoba Robotics Team" :imgSrc="HeroImg" showLogo="true" backgroundPosition="bottom"/> -->
-        <Hero title="" :imgSrc="HeroImg" showLogo="true" backgroundPosition="bottom">
+        <!-- <Hero title="" :imgSrc="HeroImg" showLogo="true" backgroundPosition="bottom">
           <h1 class="text-white font-weight-bold">University of Manitoba</h1>
           <h1 class="text-white font-weight-bold">Robotics Team</h1>
+        </Hero> -->
+        <Hero title="" :imgSrc="HeroImg" backgroundPosition="bottom">
+          <h1 class="text-white" style="font-size: 2vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">University of Manitoba</h1>
+          <h1 class="text-white" style="font-size: 6vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">Robotics Team</h1>
+          <!-- <h1 class="text-white">Robotics Team</h1> -->
         </Hero>
 
         
@@ -143,7 +148,7 @@
   import Section from '~/components/Section.vue'
   import Sponsors from '~/components/Sponsors.vue'
   import Socials from '~/components/Socials.vue'
-  import HeroImg from '@/assets/images/TeamPhoto-1.jpg'
+  import HeroImg from '@/assets/images/TeamPhoto-3.jpg'
 
   import Carousel from "~/components/Carousel.vue"
 
