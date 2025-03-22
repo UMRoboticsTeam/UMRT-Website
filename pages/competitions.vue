@@ -8,7 +8,7 @@
         
       </p>
       <a href="https://circ.cstag.ca/" class="circ-banner d-flex justify-content-center" title="Visit the CIRC Official Website">
-        <img :src="CIRCLogo" style="">
+        <img :src="CIRCLogo">
       </a>
 
       <blockquote class="blockquote">
@@ -75,18 +75,22 @@ useHead({
     // { property: 'og:url', content: '' },
   ]
 })
+
 </script>
 
 
 <style scoped>
 .circ-banner {
   background: #FFFFFF; 
-  width: fit-content; 
+  width: fit-content;
   margin: auto; 
   border-radius: 6px;
   padding: 16px;
 
   box-shadow: 0px 5px 16px 0px #000000A0;
+}
+.circ-banner img {
+  max-width: 90vw;
 }
 
 .blockquote {
@@ -106,23 +110,30 @@ useHead({
 
 
 .pano-div {
+  position: relative;
   overflow: hidden;
+  height: 20rem;
+  display: flex;
+  align-items: start;
 }
+
 .pano-div img {
-  height: 60vh;
-
-  /* position: fixed; */
-  animation: slide 0.1s linear infinite;
+  position: absolute;
+  height: 100%; 
+  width: auto;
+  animation: slide 20s ease-in-out infinite; /* Infinite sliding animation */
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -4s);
-
-  /* animation-iteration-count: 1;
-  animation-fill-mode: both; */
 }
 
 @keyframes slide {
-  to {
-    transform: translate(-100%);
+  0% {
+    transform: translateX(0); /* Start at the left */
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0); /* Move to the left by the width of the image */
   }
 }
 </style>
