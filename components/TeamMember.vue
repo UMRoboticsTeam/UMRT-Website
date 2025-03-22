@@ -75,6 +75,7 @@ onMounted(() => {
 
       const a = document.createElement('a');
       a.href = val;
+      a.target = ".";
       const icon = document.createElement('i');
       icon.classList.add('bi', `bi-${key}`);
       a.appendChild(icon);
