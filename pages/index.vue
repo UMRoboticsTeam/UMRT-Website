@@ -8,8 +8,12 @@
           <h1 class="text-white font-weight-bold">Robotics Team</h1>
         </Hero> -->
         <Hero title="" :imgSrc="HeroImg" backgroundPosition="bottom">
-          <h1 class="text-white" style="font-size: 2vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">University of Manitoba</h1>
-          <h1 class="text-white" style="font-size: 6vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">Robotics Team</h1>
+          <!-- <h1 class="text-white" style="font-size: 2vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">University of Manitoba</h1> -->
+          <!-- <h1 class="text-white" style="font-size: 6vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">Robotics Team</h1> -->
+
+          <h1 class="title">UNIVERSITY OF MANITOBA</h1>
+          <h1 class="title bigger">ROBOTICS TEAM</h1>
+
           <!-- <h1 class="text-white">Robotics Team</h1> -->
         </Hero>
 
@@ -194,3 +198,23 @@ useHead({
   ]
 })
 </script>
+
+
+<style scoped>
+.title-pre {
+
+}
+.title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* text-shadow: 0.05em 0.05em #063260, 0.1em 0.1em #063260; */
+  text-shadow: 0.09em 0.09em #063260;
+}
+.title.bigger {
+  font-size: 4rem;
+}
+
+
+
+</style>

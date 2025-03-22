@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-dark py-5">
-    <div class="small px-4 px-lg-5 px-1 text-muted" style="width: 30vw; min-width: 300px;">
+    <div class="small px-4 px-lg-5 px-1 text-muted" style="width: 30vw; min-width: 400px;">
       <h4>Contact</h4>
       <hr>
       <!-- <b>Email:</b> exec.umrt@gmail.com<br> -->

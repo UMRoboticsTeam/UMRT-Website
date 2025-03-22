@@ -2,8 +2,8 @@
   <header>
 
     <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-shrink" id="mainNav"> -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
-      <div class="container px-4 px-lg-2">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink">
+      <div class="container px-2 px-lg-1">
 
         <!-- <img :src="UMRTLogo" class="" style="height: 64px; padding: 0; margin: 0;"> -->
         <!-- <a class="navbar-brand" href="/">UofM Robotics Team</a> -->
@@ -15,17 +15,9 @@
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="/team">The Team</a></li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link" href="/team/" aria-expanded="false">The Team</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="/team/">Current Team</a>
-                <a class="dropdown-item" href="/team/#archive">Past Teams</a>
-              </div>
-            </li> -->
             <li class="nav-item"><a class="nav-link" href="/competitions">Competitions</a></li>
             <li class="nav-item"><a class="nav-link" href="/sponsorships">Sponsorships</a></li>
             <li class="nav-item"><a class="nav-link" href="/#join">Join Us!</a></li>
-            
           </ul>
         </div>
       </div>
@@ -71,21 +63,34 @@ header {
 
 }
 nav {
-  background-color: #24252900;
+  background: #24252900;
+  /* background: linear-gradient(180deg, rgba(53,54,59,0) 0%, rgba(36,37,41,0) 85%); */
   box-shadow: none;
-
+  
   /* transition: background-color 0.2s ease; */
   transition: all 0.4s ease;
 }
-html:is([data-scroll='1']) nav {
-  background-color: #242529;
+nav::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(53,54,59,1) 0%, rgba(36,37,41,1) 85%);
+  z-index: -1;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+html:is([data-scroll='1']) nav::before {
+  opacity: 1;
   color: #ffffff;
-  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
   box-shadow: 0 0 15px 0px #000000FF;
 }
 
 .navbar {
   padding: 2px;
+  
 }
 
 .navbar-collapse .show {
@@ -116,6 +121,7 @@ html:is([data-scroll='1']) .dropdown .dropdown-menu {
   color: #ffffff;
   /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
   /* box-shadow: 0 0 15px 0px #000000FF; */
+  
   
 }
 

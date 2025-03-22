@@ -46,7 +46,8 @@
         <!-- Only Title -->
         <div v-if="showLogo != 'true'">
           <!-- <h1 class="text-white font-weight-bold">{{  title  }}</h1> -->
-          <h1 class="text-white" style="font-size: 3vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">{{ title }}</h1>
+          <!-- <h1 class="text-white" style="font-size: 3vw; font-weight: 100; text-shadow: 0px 0px 2rem #000e;">{{ title }}</h1> -->
+          <h1 class="title">{{ title }}</h1>
           <slot></slot>
         </div>
 
@@ -146,4 +147,12 @@ function parallax() {
     justify-content: center;
     width: 100%;
   }
+
+.title {
+  color: white;
+  /* font-size: 4vw; */
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0.09em 0.09em #063260;
+}
 </style>
